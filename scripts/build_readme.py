@@ -292,8 +292,9 @@ def render_heatmap(rows, mode):
          f'aria-label="Heatmap of papers per research area per quarter">']
     for gi, g in enumerate(groups):
         yy = 26 + gi * (ch + gap)
+        label = GROUP_SHORT[g].replace("&", "&amp;")
         p.append(f'<text x="{lw-8}" y="{yy + ch/2 + 3.5}" text-anchor="end" '
-                 f'{FONT} font-size="11" fill="{c["ink2"]}">{GROUP_SHORT[g]}</text>')
+                 f'{FONT} font-size="11" fill="{c["ink2"]}">{label}</text>')
         for bi, b in enumerate(bins):
             x = lw + bi * (cw + gap)
             v = counts[(g, b)]

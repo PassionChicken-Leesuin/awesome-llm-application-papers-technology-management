@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 932 250" width="932" height="250" role="img" aria-label="Heatmap of papers per research area per quarter">
-<text x="142" y="44.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">Patent & IP</text>
+<text x="142" y="44.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">Patent &amp; IP</text>
 <rect x="150" y="26" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="205" y="26" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="260" y="26" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
@@ -44,7 +44,7 @@
 <text x="836.0" y="78.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">1</text>
 <rect x="865" y="59" width="52" height="30" rx="4" fill="#9ec5f4"/>
 <text x="891.0" y="78.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">2</text>
-<text x="142" y="110.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">Scientometrics & Lit</text>
+<text x="142" y="110.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">Scientometrics &amp; Lit</text>
 <rect x="150" y="92" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="205" y="92" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="260" y="92" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
@@ -69,7 +69,7 @@
 <text x="836.0" y="111.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">2</text>
 <rect x="865" y="92" width="52" height="30" rx="4" fill="#cde2fb"/>
 <text x="891.0" y="111.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">1</text>
-<text x="142" y="143.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">R&D & Innovation</text>
+<text x="142" y="143.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">R&amp;D &amp; Innovation</text>
 <rect x="150" y="125" width="52" height="30" rx="4" fill="#cde2fb"/>
 <text x="176.0" y="144.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">1</text>
 <rect x="205" y="125" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
@@ -90,7 +90,7 @@
 <rect x="810" y="125" width="52" height="30" rx="4" fill="#cde2fb"/>
 <text x="836.0" y="144.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">1</text>
 <rect x="865" y="125" width="52" height="30" rx="4" fill="none" stroke="#e1e0d9" stroke-width="1"/>
-<text x="142" y="176.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">Simulation & Strategy</text>
+<text x="142" y="176.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#52514e">Simulation &amp; Strategy</text>
 <rect x="150" y="158" width="52" height="30" rx="4" fill="#cde2fb"/>
 <text x="176.0" y="177.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">1</text>
 <rect x="205" y="158" width="52" height="30" rx="4" fill="#cde2fb"/>

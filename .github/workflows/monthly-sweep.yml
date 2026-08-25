@@ -20,10 +20,16 @@ jobs:
           python-version: "3.12"
 
       - name: Run sweep
-        run: |
-          python scripts/sweep_candidates.py > candidates.md
-          echo "count=$(grep -c '^- \[ \]' candidates.md || true)" >> "$GITHUB_OUTPUT"
         id: sweep
+        run: |
+          set +e
+          python scripts/sweep_candidates.py > candidates.md
+          status=$?
+          set -e
+          echo "count=$(grep -c '^- \[ \]' candidates.md || true)" >> "$GITHUB_OUTPUT"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          # 0 = complete, 3 = ran but some API calls failed (partial); anything else is a hard error
+          if [ "$status" != "0" ] && [ "$status" != "3" ]; then exit "$status"; fi
 
       - name: Open review issue
         if: steps.sweep.outputs.count != '0'
@@ -31,6 +37,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           title="Candidate sweep $(date -u +%Y-%m)"
+          if [ "${{ steps.sweep.outputs.status }}" = "3" ]; then title="$title (partial — API failures)"; fi
           gh label create sweep --color BFD4F2 --description "Monthly candidate sweep" || true
           gh issue create \
             --title "$title" \
@@ -38,5 +45,11 @@ jobs:
             --body-file candidates.md
 
       - name: Nothing found
-        if: steps.sweep.outputs.count == '0'
+        if: steps.sweep.outputs.count == '0' && steps.sweep.outputs.status == '0'
         run: echo "No new candidates this month."
+
+      - name: Fail on partial sweep
+        if: steps.sweep.outputs.status == '3'
+        run: |
+          echo "::error::Sweep was partial — some API requests failed. The review issue (if any) is marked (partial)."
+          exit 1

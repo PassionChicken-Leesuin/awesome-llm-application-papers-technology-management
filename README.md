@@ -5,8 +5,8 @@
 **Hand-picked research papers applying LLMs, LLM agents, and multi-agent systems (MAS) to technology & innovation management (TIM).**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Papers](https://img.shields.io/badge/papers-161-blue)
-![Adjacent](https://img.shields.io/badge/adjacent-56-lightgrey)
+![Papers](https://img.shields.io/badge/papers-158-blue)
+![Adjacent](https://img.shields.io/badge/adjacent-52-lightgrey)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -39,15 +39,15 @@ patent analytics · technology forecasting · scientometrics · R&D & innovation
 | Venue | Papers |
 |---|---:|
 | arXiv (preprints) | 27 |
-| Scientometrics | 23 |
+| Scientometrics | 21 |
 | World Patent Information | 21 |
 | J. Engineering Design | 13 |
 | Advanced Engineering Informatics | 9 |
 | Information Processing & Management | 9 |
 | J. Mechanical Design | 6 |
-| Design Science | 4 |
 | Quantitative Science Studies | 4 |
 | ACL | 3 |
+| Design Science | 3 |
 | Technological Forecasting and Social Change | 3 |
 | Technovation | 3 |
 | CIRP Annals | 2 |
@@ -86,24 +86,25 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
   - [Trademark & Non-Patent IP](#trademark--non-patent-ip) (2)
 - [Technology Forecasting & Foresight](#technology-forecasting--foresight) (10)
 - **Scientometrics & Literature Analysis**
-  - [Literature Screening & Systematic Reviews](#literature-screening--systematic-reviews) (2)
-  - [Novelty & Impact Prediction of Research](#novelty--impact-prediction-of-research) (8)
+  - [Literature Screening & Systematic Reviews](#literature-screening--systematic-reviews) (1)
+  - [Novelty & Impact Prediction of Research](#novelty--impact-prediction-of-research) (7)
   - [Scientometrics & Science of Science](#scientometrics--science-of-science) (18)
-  - [LLM-Assisted Peer Review](#llm-assisted-peer-review) (8)
+  - [LLM-Assisted Peer Review](#llm-assisted-peer-review) (7)
   - [Research & R&D Evaluation](#research--rd-evaluation) (5)
 - **R&D & Innovation Management**
   - [Idea Generation & Creativity in Innovation](#idea-generation--creativity-in-innovation) (18)
   - [New Product Development & R&D Management](#new-product-development--rd-management) (7)
-  - [Engineering & Conceptual Design](#engineering--conceptual-design) (29)
+  - [Engineering & Conceptual Design](#engineering--conceptual-design) (28)
 - **Simulation, Strategy & Discovery**
   - [Market & Consumer Simulation](#market--consumer-simulation) (6)
   - [Strategy & Decision-Making](#strategy--decision-making) (1)
-- [Adjacent & enabling methods](#adjacent--enabling-methods) (56)
+  - [Scientific Discovery Agents](#scientific-discovery-agents) (1)
+- [Adjacent & enabling methods](#adjacent--enabling-methods) (52)
 - [Related lists](#related-lists)
 
 ## Papers
 
-161 core papers. `MAS` badge marks explicitly multi-agent systems. Newest first within each section.
+158 core papers. `MAS` badge marks explicitly multi-agent systems. Newest first within each section.
 
 ### Patent & IP Analytics
 
@@ -245,7 +246,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 
 | Paper | Link |
 |---|---|
-| **[Scientific hypothesis prediction based on large language models and causal graphs](https://doi.org/10.1016/j.ipm.2026.104894)** — Ba et al., 2026, *Information Processing & Management*. Predicts scientific hypotheses from LLMs and causal graphs | <a href="https://doi.org/10.1016/j.ipm.2026.104894"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.ipm.2026.104894-blue.svg" alt="DOI" /></a> |
 | **[SocLitGen: An LLM-assisted framework for automated literature review in social sciences](https://doi.org/10.1016/j.ipm.2026.104885)** — Hu et al., 2026, *Information Processing & Management*. LLM-assisted framework automates social-science literature reviews | <a href="https://doi.org/10.1016/j.ipm.2026.104885"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.ipm.2026.104885-blue.svg" alt="DOI" /></a> |
 
 </details>
@@ -264,7 +264,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[Evaluating and Enhancing Large Language Models for Novelty Assessment in Scholarly Publications](https://arxiv.org/abs/2409.16605)** — Lin et al., 2024, *AISD @ ACL 2025*. SchNovel benchmark and RAG-Novelty for scholarly novelty assessment | <a href="https://arxiv.org/abs/2409.16605"><img src="https://img.shields.io/badge/arXiv-2409.16605-b31b1b.svg" alt="arXiv" /></a> |
 | **[From Words to Worth: Newborn Article Impact Prediction with LLM](https://arxiv.org/abs/2408.03934)** — Zhao et al., 2024, *arXiv:2408.03934*. Fine-tuned LLM predicts article impact from title and abstract | <a href="https://arxiv.org/abs/2408.03934"><img src="https://img.shields.io/badge/arXiv-2408.03934-b31b1b.svg" alt="arXiv" /></a> |
 | **[Can ChatGPT be used to predict citation counts, readership, and social media interaction? An exploration among 2222 scientific abstracts](https://doi.org/10.1007/s11192-024-04939-y)** — de Winter, 2024, *Scientometrics*. ChatGPT predicts citations, readership, altmetrics across 2,222 abstracts | <a href="https://doi.org/10.1007/s11192-024-04939-y"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--024--04939--y-blue.svg" alt="DOI" /></a> |
-| **[The use of ChatGPT for identifying disruptive papers in science: a first exploration](https://doi.org/10.1007/s11192-024-05176-z)** — Bornmann et al., 2024, *Scientometrics*. ChatGPT identifies disruptive papers without publication or citation counts | <a href="https://doi.org/10.1007/s11192-024-05176-z"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--024--05176--z-blue.svg" alt="DOI" /></a> |
 
 </details>
 
@@ -306,7 +305,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[Toward better pragmatic tagging of peer review: Enhancing benchmark datasets via human-in-the-loop multi-agent collaboration](https://doi.org/10.1016/j.ipm.2026.104704)** — He et al., 2026, *Information Processing & Management*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Human-in-the-loop multi-agent tagging improves peer-review benchmark datasets | <a href="https://doi.org/10.1016/j.ipm.2026.104704"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.ipm.2026.104704-blue.svg" alt="DOI" /></a> |
 | **[Relationship between peer review quality and scientific impact: Insights from LLMs-assessed reviews](https://doi.org/10.1016/j.joi.2026.101801)** — Sun, 2026, *J. Informetrics*. LLM-scored review quality correlates with later citation impact | <a href="https://doi.org/10.1016/j.joi.2026.101801"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.joi.2026.101801-blue.svg" alt="DOI" /></a> |
 | **[Can large language models assess the quality of peer review? An empirical study](https://doi.org/10.1007/s11192-026-05622-0)** — Tang et al., 2026, *Scientometrics*. Empirically tests whether LLMs can judge peer-review quality | <a href="https://doi.org/10.1007/s11192-026-05622-0"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05622--0-blue.svg" alt="DOI" /></a> |
-| **[Impact of large language models on peer review opinions from a fine-grained perspective: evidence from top conference proceedings in AI](https://doi.org/10.1007/s11192-026-05645-7)** — Wu et al., 2026, *Scientometrics*. Fine-grained analysis of LLM influence on conference review opinions | <a href="https://doi.org/10.1007/s11192-026-05645-7"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05645--7-blue.svg" alt="DOI" /></a> |
 | **[Co-Reviewer: can AI review like a human? An agentic framework for LLM-human alignment in peer review](https://doi.org/10.1007/s11192-026-05557-6)** — Bharti et al., 2026, *Scientometrics*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Agentic framework aligns LLM reviews with human reviewer judgement | <a href="https://doi.org/10.1007/s11192-026-05557-6"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05557--6-blue.svg" alt="DOI" /></a> |
 | **[LLM aspect prediction: reviewing academic papers from different aspects with Large Language Model](https://doi.org/10.1007/s11192-026-05771-2)** — Hu et al., 2026, *Scientometrics*. LLM reviews papers along separate evaluative aspects | <a href="https://doi.org/10.1007/s11192-026-05771-2"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05771--2-blue.svg" alt="DOI" /></a> |
 | **[Fighting Fire with Fire: Infusing Artificial Intelligence into Peer Review to Sustain Quality Scholarship](https://doi.org/10.1287/mnsc.2026.00184)** — Bhargava et al., 2026, *Management Science*. Journals infuse generative AI into review to sustain quality | <a href="https://doi.org/10.1287/mnsc.2026.00184"><img src="https://img.shields.io/badge/DOI-10.1287%2Fmnsc.2026.00184-blue.svg" alt="DOI" /></a> |
@@ -399,7 +397,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[A context-aware KG-LLM collaborated conceptual design approach for personalized products: A case in lower limbs rehabilitation assistive devices](https://doi.org/10.1016/j.aei.2025.103422)** — Pan et al., 2025, *Advanced Engineering Informatics*. Context-aware knowledge-graph LLM conceptual design for personalized assistive devices | <a href="https://doi.org/10.1016/j.aei.2025.103422"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aei.2025.103422-blue.svg" alt="DOI" /></a> |
 | **[Knowledge augmented generalizer specializer: A framework for early stage design exploration](https://doi.org/10.1016/j.aei.2025.103141)** — Sahadevan et al., 2025, *Advanced Engineering Informatics*. Generalizer-specializer framework augments knowledge for early-stage design exploration | <a href="https://doi.org/10.1016/j.aei.2025.103141"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aei.2025.103141-blue.svg" alt="DOI" /></a> |
 | **[Customization and personalization of large language models for engineering design](https://doi.org/10.1016/j.cirp.2025.03.001)** — Jiang et al., 2025, *CIRP Annals*. Customizes general-purpose LLMs into manufacturability-aware design models | <a href="https://doi.org/10.1016/j.cirp.2025.03.001"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.cirp.2025.03.001-blue.svg" alt="DOI" /></a> |
-| **[How generative AI supports human in conceptual design](https://doi.org/10.1017/dsj.2025.2)** — Chen et al., 2025, *Design Science*. Maps human and generative-AI roles across conceptual design stages | <a href="https://doi.org/10.1017/dsj.2025.2"><img src="https://img.shields.io/badge/DOI-10.1017%2Fdsj.2025.2-blue.svg" alt="DOI" /></a> |
 | **[Enhancing design concept diversity: multi-persona prompting strategies for large language models](https://doi.org/10.1017/dsj.2025.10037)** — Feng et al., 2025, *Design Science*. Multi-persona prompting broadens the diversity of LLM design concepts | <a href="https://doi.org/10.1017/dsj.2025.10037"><img src="https://img.shields.io/badge/DOI-10.1017%2Fdsj.2025.10037-blue.svg" alt="DOI" /></a> |
 | **[A comparative study on retrieval-augmented generation and chain-of-thought applications for LLM-assisted engineering design ideation](https://doi.org/10.1080/09544828.2025.2574209)** — Jiang, 2025, *J. Engineering Design*. Compares RAG and chain-of-thought prompting across 40 design tasks | <a href="https://doi.org/10.1080/09544828.2025.2574209"><img src="https://img.shields.io/badge/DOI-10.1080%2F09544828.2025.2574209-blue.svg" alt="DOI" /></a> |
 | **[AskNatureGPT: an LLM-driven concept generation method based on bio-inspired design knowledge](https://doi.org/10.1080/09544828.2025.2481536)** — Chen et al., 2025, *J. Engineering Design*. AskNatureGPT generates concepts from bio-inspired design knowledge | <a href="https://doi.org/10.1080/09544828.2025.2481536"><img src="https://img.shields.io/badge/DOI-10.1080%2F09544828.2025.2481536-blue.svg" alt="DOI" /></a> |
@@ -441,6 +438,17 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | Paper | Link |
 |---|---|
 | **[Artificial Intelligence and Strategic Decision-Making: Evidence from Entrepreneurs and Investors](https://doi.org/10.1287/stsc.2024.0190)** — Csaszar et al., 2024, *Strategy Science*. GPT-4 business strategies rival human founders per investor evaluations | <a href="https://doi.org/10.1287/stsc.2024.0190"><img src="https://img.shields.io/badge/DOI-10.1287%2Fstsc.2024.0190-blue.svg" alt="DOI" /></a> |
+
+</details>
+
+<details open>
+<summary><h4>Scientific Discovery Agents</h4></summary>
+
+*Autonomous research agents with direct relevance to R&D processes.*
+
+| Paper | Link |
+|---|---|
+| **[Scientific hypothesis prediction based on large language models and causal graphs](https://doi.org/10.1016/j.ipm.2026.104894)** — Ba et al., 2026, *Information Processing & Management*. Predicts scientific hypotheses from LLMs and causal graphs | <a href="https://doi.org/10.1016/j.ipm.2026.104894"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.ipm.2026.104894-blue.svg" alt="DOI" /></a> |
 
 </details>
 
@@ -504,6 +512,7 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 |---|---|
 | **[How deep do large language models internalize scientific literature and citation practices?](https://doi.org/10.1162/qss.a.502)** — Algaba et al., 2026, *Quantitative Science Studies*. Compares GPT-4o reference suggestions against human citation practice | <a href="https://doi.org/10.1162/qss.a.502"><img src="https://img.shields.io/badge/DOI-10.1162%2Fqss.a.502-blue.svg" alt="DOI" /></a> |
 | **[Large language models surpass human experts in predicting neuroscience results](https://doi.org/10.1038/s41562-024-02046-9)** — Luo et al., 2024, *Nature Human Behaviour*. BrainBench: LLMs beat neuroscientists at predicting experimental outcomes | <a href="https://doi.org/10.1038/s41562-024-02046-9"><img src="https://img.shields.io/badge/DOI-10.1038%2Fs41562--024--02046--9-blue.svg" alt="DOI" /></a> |
+| **[The use of ChatGPT for identifying disruptive papers in science: a first exploration](https://doi.org/10.1007/s11192-024-05176-z)** — Bornmann et al., 2024, *Scientometrics*. ChatGPT identifies disruptive papers without publication or citation counts | <a href="https://doi.org/10.1007/s11192-024-05176-z"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--024--05176--z-blue.svg" alt="DOI" /></a> |
 
 </details>
 
@@ -514,7 +523,6 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 
 | Paper | Link |
 |---|---|
-| **[Large language models for business and management applications: A review](https://doi.org/10.1016/j.ipm.2026.104864)** — Arslan et al., 2026, *Information Processing & Management*. Bibliometric and thematic review of LLMs in business management | <a href="https://doi.org/10.1016/j.ipm.2026.104864"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.ipm.2026.104864-blue.svg" alt="DOI" /></a> |
 | **[Ethical evaluation of large language models for scientometrics: a multidimensional perspective](https://doi.org/10.1007/s11192-026-05773-0)** — Shen et al., 2026, *Scientometrics*. Multidimensional ethical assessment of LLM use in scientometrics | <a href="https://doi.org/10.1007/s11192-026-05773-0"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05773--0-blue.svg" alt="DOI" /></a> |
 
 </details>
@@ -543,7 +551,6 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 |---|---|
 | **[When AI Becomes Its Own Biggest Fan: Self-Preference Bias in AI-Assisted Peer Review](https://doi.org/10.1109/tem.2026.3691360)** — Shi et al., 2026, *IEEE Trans. Engineering Management*. GPT-4 and LLaMA favour their own text when reviewing | <a href="https://doi.org/10.1109/tem.2026.3691360"><img src="https://img.shields.io/badge/DOI-10.1109%2Ftem.2026.3691360-blue.svg" alt="DOI" /></a> |
 | **[Exploiting large language models in peer review: indirect prompt injection attacks and integrity probes](https://doi.org/10.1007/s11192-026-05695-x)** — Torrielli et al., 2026, *Scientometrics*. Hidden manuscript instructions steer LLM reviewers via prompt injection | <a href="https://doi.org/10.1007/s11192-026-05695-x"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05695--x-blue.svg" alt="DOI" /></a> |
-| **[More Versus Better: Artificial Intelligence, Incentives, and the Emerging Crisis in Peer Review](https://doi.org/10.1287/orsc.2026.ed.v37.n3)** — Gartenberg et al., 2026, *Organization Science*. AI raises submissions 42% while writing quality falls | <a href="https://doi.org/10.1287/orsc.2026.ed.v37.n3"><img src="https://img.shields.io/badge/DOI-10.1287%2Forsc.2026.ed.v37.n3-blue.svg" alt="DOI" /></a> |
 | **[Large language models in peer review: challenges and opportunities](https://doi.org/10.1007/s11192-025-05440-w)** — Sun, 2025, *Scientometrics*. Surveys challenges and opportunities of LLMs in peer review | <a href="https://doi.org/10.1007/s11192-025-05440-w"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--025--05440--w-blue.svg" alt="DOI" /></a> |
 
 </details>
@@ -562,17 +569,6 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 </details>
 
 <details open>
-<summary><h3>Idea Generation & Creativity in Innovation</h3></summary>
-
-*LLMs vs humans/crowds in generating product and research ideas.*
-
-| Paper | Link |
-|---|---|
-| **[The hidden costs of AI-assisted ideation: empirical findings on ChatGPT’s impact on novice designers’ creative confidence and design process](https://doi.org/10.1017/dsj.2026.10060)** — Krajcer et al., 2026, *Design Science*. ChatGPT ideation dents novice designers' creative confidence and process | <a href="https://doi.org/10.1017/dsj.2026.10060"><img src="https://img.shields.io/badge/DOI-10.1017%2Fdsj.2026.10060-blue.svg" alt="DOI" /></a> |
-
-</details>
-
-<details open>
 <summary><h3>New Product Development & R&D Management</h3></summary>
 
 *LLM augmentation of NPD teams and product-concept evaluation.*
@@ -580,8 +576,6 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 | Paper | Link |
 |---|---|
 | **[The use of artificial intelligence in new product development: A systematic literature review, conceptual framework, and future research agenda](https://doi.org/10.1016/j.technovation.2026.103541)** — Vallé et al., 2026, *Technovation*. Systematic review and framework for AI in new product development | <a href="https://doi.org/10.1016/j.technovation.2026.103541"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.technovation.2026.103541-blue.svg" alt="DOI" /></a> |
-| **[Future applications of generative large language models: A data-driven case study on ChatGPT](https://doi.org/10.1016/j.technovation.2024.103002)** — Chiarello et al., 2024, *Technovation*. Data-driven analysis of tasks users bring to ChatGPT | <a href="https://doi.org/10.1016/j.technovation.2024.103002"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.technovation.2024.103002-blue.svg" alt="DOI" /></a> |
-| **[Natural language processing for innovation search – Reviewing an emerging non-human innovation intermediary](https://doi.org/10.1016/j.technovation.2023.102883)** — Just, 2023, *Technovation*. Reviews NLP as non-human innovation search intermediary | <a href="https://doi.org/10.1016/j.technovation.2023.102883"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.technovation.2023.102883-blue.svg" alt="DOI" /></a> |
 
 </details>
 
@@ -593,7 +587,7 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 | Paper | Link |
 |---|---|
 | **[LLMs in industrial domains: A systematic review of adaptation techniques and applications from the product lifecycle perspective](https://doi.org/10.1016/j.aei.2026.104655)** — Yu et al., 2026, *Advanced Engineering Informatics*. Systematic review of LLM adaptation across the product lifecycle | <a href="https://doi.org/10.1016/j.aei.2026.104655"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aei.2026.104655-blue.svg" alt="DOI" /></a> |
-| **[How does contextual fidelity impact how we think, talk, and act in AI-assisted engineering design?](https://doi.org/10.1016/j.aei.2026.104456)** — Vyas et al., 2026, *Advanced Engineering Informatics*. Studies how contextual fidelity shapes AI-assisted engineering design behaviour | <a href="https://doi.org/10.1016/j.aei.2026.104456"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.aei.2026.104456-blue.svg" alt="DOI" /></a> |
+| **[How generative AI supports human in conceptual design](https://doi.org/10.1017/dsj.2025.2)** — Chen et al., 2025, *Design Science*. Maps human and generative-AI roles across conceptual design stages | <a href="https://doi.org/10.1017/dsj.2025.2"><img src="https://img.shields.io/badge/DOI-10.1017%2Fdsj.2025.2-blue.svg" alt="DOI" /></a> |
 | **[Generative AI-enhanced human-AI collaborative conceptual design: A systematic literature review](https://doi.org/10.1016/j.destud.2025.101300)** — Fang et al., 2025, *Design Studies*. Systematic review of GenAI-enhanced human-AI collaborative conceptual design | <a href="https://doi.org/10.1016/j.destud.2025.101300"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.destud.2025.101300-blue.svg" alt="DOI" /></a> |
 | **[A survey of large language model-augmented knowledge graphs for advanced complex product design](https://doi.org/10.1016/j.jmsy.2025.04.016)** — Liang et al., 2025, *J. Manufacturing Systems*. Surveys LLM-augmented knowledge graphs for complex product design | <a href="https://doi.org/10.1016/j.jmsy.2025.04.016"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.jmsy.2025.04.016-blue.svg" alt="DOI" /></a> |
 | **[Exploring Human and Language Model Alignment in Perceived Design Similarity Using Ordinal Embeddings](https://doi.org/10.1115/1.4069129)** — Keeler et al., 2025, *J. Mechanical Design*. Tests whether language models judge design similarity like humans | <a href="https://doi.org/10.1115/1.4069129"><img src="https://img.shields.io/badge/DOI-10.1115%2F1.4069129-blue.svg" alt="DOI" /></a> |

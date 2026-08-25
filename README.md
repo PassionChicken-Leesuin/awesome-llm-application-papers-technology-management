@@ -17,10 +17,19 @@ patent analytics · technology forecasting · scientometrics · literature scree
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/trend-dark.svg">
-  <img alt="Bar chart of papers per period, half-yearly through 2025 and monthly from 2026" src="assets/trend-light.svg" width="100%">
+  <img alt="Stacked bar chart of journal and preprint papers per quarter" src="assets/trend-light.svg" width="100%">
 </picture>
 
-*Dated by first public appearance (arXiv posting or journal online date). Half-yearly bins through 2025, monthly from 2026.*
+*Quarterly counts, dated by first public appearance (arXiv posting or journal online date). Blue = journals & conferences, red = preprints (arXiv/SSRN).*
+
+### Which areas peak when
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fields-dark.svg">
+  <img alt="Heatmap of papers per research area per quarter" src="assets/fields-light.svg" width="100%">
+</picture>
+
+*Papers per research area per quarter — the hot cells show each cluster's peak period.*
 
 <!-- AUTOGEN:VENUES BEGIN (generated from data/papers.tsv) -->
 

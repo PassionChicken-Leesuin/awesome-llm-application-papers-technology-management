@@ -1,0 +1,42 @@
+name: Monthly candidate sweep
+
+on:
+  schedule:
+    - cron: "17 3 1 * *"   # 1st of each month, 03:17 UTC
+  workflow_dispatch: {}     # allow manual runs from the Actions tab
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run sweep
+        run: |
+          python scripts/sweep_candidates.py > candidates.md
+          echo "count=$(grep -c '^- \[ \]' candidates.md || true)" >> "$GITHUB_OUTPUT"
+        id: sweep
+
+      - name: Open review issue
+        if: steps.sweep.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Candidate sweep $(date -u +%Y-%m)"
+          gh label create sweep --color BFD4F2 --description "Monthly candidate sweep" || true
+          gh issue create \
+            --title "$title" \
+            --label "sweep" \
+            --body-file candidates.md
+
+      - name: Nothing found
+        if: steps.sweep.outputs.count == '0'
+        run: echo "No new candidates this month."

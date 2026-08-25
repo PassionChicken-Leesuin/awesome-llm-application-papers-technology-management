@@ -13,6 +13,28 @@ patent analytics · technology forecasting · scientometrics · literature scree
 
 </div>
 
+<!-- AUTOGEN:VENUES BEGIN (generated from data/papers.tsv) -->
+
+### Where these papers appear
+
+| Venue | Papers |
+|---|---:|
+| arXiv (preprints) | 40 |
+| ACL | 3 |
+| Scientometrics | 3 |
+| World Patent Information | 3 |
+| ICLR | 2 |
+| Journal of Product Innovation Management | 2 |
+| NAACL | 2 |
+| Nature | 2 |
+| NeurIPS | 2 |
+| SIGIR | 2 |
+| SSRN (working papers) | 2 |
+| Technological Forecasting and Social Change | 2 |
+| Others (1 each): Advanced Engineering Informatics, Artificial Intelligence Review, Engineering Applications of Artificial Intelligence, ICML, IEEE Engineering Management Review, JASIST, Journal of Computer Languages, LREC-COLING, Nature Machine Intelligence, Organization Science, Research Synthesis Methods, Science Advances, Strategy Science, UIST | 14 |
+
+<!-- AUTOGEN:VENUES END -->
+
 ## Why this list exists
 
 Most agent paper lists collect research *on* agent architectures (memory, planning, coordination). This list collects the complement: research that *uses* agents on real TIM tasks — the papers that end up scattered across *TFSC*, *Scientometrics*, *World Patent Information*, management journals, and application tracks, and therefore rarely appear in ML-centric lists.

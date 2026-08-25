@@ -22,6 +22,8 @@ README = ROOT / "README.md"
 
 BEGIN = "<!-- AUTOGEN:PAPERS BEGIN (edit data/papers.tsv, not this section) -->"
 END = "<!-- AUTOGEN:PAPERS END -->"
+V_BEGIN = "<!-- AUTOGEN:VENUES BEGIN (generated from data/papers.tsv) -->"
+V_END = "<!-- AUTOGEN:VENUES END -->"
 
 # Top-level groups -> sections (order defines README order).
 # A section appears only if it has at least one paper in the TSV.
@@ -137,6 +139,36 @@ def section_block(name, desc, papers, level):
     return out
 
 
+def venue_group(venue):
+    """Normalize a venue string to a display group for the venue table."""
+    if venue.startswith("arXiv:"):
+        return "arXiv (preprints)"
+    if "SSRN" in venue:
+        return "SSRN (working papers)"
+    for conf in ("NAACL", "ACL", "SIGIR", "NeurIPS", "ICLR", "ICML",
+                 "LREC-COLING", "UIST"):
+        if conf in venue:
+            return conf
+    return venue
+
+
+def render_venues(rows):
+    counts = {}
+    for r in rows:
+        g = venue_group(r["venue"])
+        counts[g] = counts.get(g, 0) + 1
+    multi = sorted(((n, v) for v, n in counts.items() if n >= 2),
+                   key=lambda x: (-x[0], x[1]))
+    singles = sorted(v for v, n in counts.items() if n == 1)
+    out = [V_BEGIN, "", "### Where these papers appear", "",
+           "| Venue | Papers |", "|---|---:|"]
+    out += [f"| {v} | {n} |" for n, v in multi]
+    if singles:
+        out.append(f"| Others (1 each): {', '.join(singles)} | {len(singles)} |")
+    out += ["", V_END]
+    return "\n".join(out)
+
+
 def render(rows):
     by_sec = {}
     for r in rows:
@@ -171,8 +203,15 @@ def main():
         head, rest = text.split(BEGIN, 1)
         _, tail = rest.split(END, 1)
     except ValueError:
-        sys.exit("README.md: AUTOGEN markers not found")
+        sys.exit("README.md: AUTOGEN:PAPERS markers not found")
     head = re.sub(r"papers-\d+-blue", f"papers-{len(rows)}-blue", head)
+    if V_BEGIN in head:
+        try:
+            v_head, v_rest = head.split(V_BEGIN, 1)
+            _, v_tail = v_rest.split(V_END, 1)
+        except ValueError:
+            sys.exit("README.md: AUTOGEN:VENUES markers malformed")
+        head = v_head + render_venues(rows) + v_tail
     new = head + render(rows) + tail
     if "--check" in sys.argv:
         if new != text:

@@ -1,4 +1,4 @@
-# Awesome LLM Agents for Technology & Innovation Management
+# Awesome LLM Application Papers for Technology & Innovation Management
 
 <div align="center">
 

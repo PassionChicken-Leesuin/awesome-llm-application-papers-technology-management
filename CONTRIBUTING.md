@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv` is the source of truth**, and the generated parts of `README.md` — the paper-count badge, the Contents (with per-section counts), and the Papers tables — are built from it. Never edit the README between the `AUTOGEN:PAPERS` markers by hand.
+Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv` is the source of truth**, and the generated parts of `README.md` — the paper-count badge, the trend chart (`assets/trend-*.svg`), the venue table, the Contents (with per-section counts), and the Papers tables — are built from it. Never edit the README between the `AUTOGEN:PAPERS` markers by hand.
 
 ## Adding a paper
 
@@ -17,6 +17,7 @@ Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv
    | `url` | DOI link preferred; otherwise arXiv abstract page |
    | `mas` | `yes` if the paper presents an explicitly multi-agent system (adds the purple `MAS` badge), else `no` |
    | `summary` | one clause, ≤ 12 words, telegraphic style matching existing entries |
+   | `month` | `YYYY-MM` of **first public appearance** (arXiv posting month from the ID, or the journal's online-first date per Crossref) — feeds the trend chart |
 
    Row order within a year is preserved, and sections are sorted newest-first by year, so place your row where it should appear among same-year entries.
 3. Regenerate the README and verify:

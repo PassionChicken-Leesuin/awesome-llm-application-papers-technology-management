@@ -13,6 +13,15 @@ patent analytics · technology forecasting · scientometrics · literature scree
 
 </div>
 
+### Papers over time
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/trend-dark.svg">
+  <img alt="Bar chart of papers per period, half-yearly through 2025 and monthly from 2026" src="assets/trend-light.svg" width="100%">
+</picture>
+
+*Dated by first public appearance (arXiv posting or journal online date). Half-yearly bins through 2025, monthly from 2026.*
+
 <!-- AUTOGEN:VENUES BEGIN (generated from data/papers.tsv) -->
 
 ### Where these papers appear

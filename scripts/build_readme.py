@@ -43,6 +43,8 @@ GROUPS = [
          "Benchmarks and metrics for LLM performance on intellectual-property tasks."),
         ("IP Domain Models & Surveys",
          "Domain-adapted models and surveys of NLP/LLM methods in the patent domain."),
+        ("Trademark & Non-Patent IP",
+         "IP tasks beyond patents: trademark similarity, opposition, and clearance."),
     ]),
     ("Technology Forecasting & Foresight", [
         ("Technology Forecasting & Foresight",
@@ -57,12 +59,18 @@ GROUPS = [
          "Agentic and LLM-based tools for bibliometric and science-of-science analysis."),
         ("Automated Survey Writing & Paper Search",
          "Agents that search, synthesize, and write literature reviews."),
+        ("LLM-Assisted Peer Review",
+         "LLMs writing, checking, or auditing manuscript reviews — the review act itself."),
+        ("Research & R&D Evaluation",
+         "LLM scores as institutional evaluation signals: journal quality, research value, funding assessment."),
     ]),
     ("R&D & Innovation Management", [
         ("Idea Generation & Creativity in Innovation",
          "LLMs vs humans/crowds in generating product and research ideas."),
         ("New Product Development & R&D Management",
          "LLM augmentation of NPD teams and product-concept evaluation."),
+        ("Engineering & Conceptual Design",
+         "LLMs in the design front end: concept generation, TRIZ, bio-inspired design, requirements."),
     ]),
     ("Simulation, Strategy & Discovery", [
         ("Market & Consumer Simulation",

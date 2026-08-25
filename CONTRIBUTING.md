@@ -36,13 +36,34 @@ Add the section name and a one-line description to `GROUPS` in `scripts/build_re
 
 ## Monthly candidate sweep
 
-A GitHub Action (`.github/workflows/monthly-sweep.yml`) runs on the first day of each month. It queries OpenAlex and Semantic Scholar for recent papers matching TIM × LLM-agent keywords, drops anything already in `data/papers.tsv`, and opens a review issue listing the candidates. Triage that issue like a PR review: for each candidate, either add it via the steps above or dismiss it with a one-line reason. The sweep is recall-oriented — expect false positives.
+A GitHub Action (`.github/workflows/monthly-sweep.yml`) runs on the first day of each month and opens a review issue listing candidates. It searches along **two axes**, because each one is blind to what the other catches:
 
-You can also run the sweep locally:
+| axis | what it does | what it misses |
+|---|---|---|
+| **keyword** | free-text TIM × LLM/agent queries against OpenAlex and Semantic Scholar, last 2 months | journal papers that phrase the same task differently — "evaluating creative output" for idea generation, "granular classification" for landscaping |
+| **venue** | a named list of ~40 TIM / scientometrics / engineering-design / strategy journals, intersected with (LLM term AND TIM-task term), last 12 months | anything published outside the named venue list |
+
+The venue axis runs on a wider window because journals lag: a paper can sit online-first for months, and issue assignment moves its date again.
+
+Triage the issue like a PR review. For each candidate, either add it via the steps above, **or append a row to `data/dismissed.tsv`** with a reason. The sweep dedupes against both `papers.tsv` and `dismissed.tsv`, so a paper you rejected stays rejected instead of reappearing every month. Columns: `title`, `url`, `venue`, `year`, `reason`, `dismissed` (YYYY-MM-DD).
+
+The sweep is recall-oriented — expect false positives. Leaving a candidate untriaged is fine; it resurfaces next month, which beats a rushed call.
+
+You can also run it locally:
 
 ```bash
-python scripts/sweep_candidates.py            # prints candidates to stdout
+python scripts/sweep_candidates.py
 ```
+
+```bash
+python scripts/sweep_candidates.py --axis venue --venue-months 24
+```
+
+Set `SWEEP_MAILTO` to your email to use the OpenAlex polite pool.
+
+### Adding a venue
+
+Add its ISSN and a short label to `VENUES` in `scripts/sweep_candidates.py`, using the print ISSN where a journal has both. A venue earns a place if it has published — or would plausibly publish — an LLM-applied-to-TIM paper, not merely because it is a good journal.
 
 ## Removing or correcting entries
 

@@ -21,6 +21,9 @@ jobs:
 
       - name: Run sweep
         id: sweep
+        env:
+          # OpenAlex polite pool; the noreply address keeps a real inbox out of the repo
+          SWEEP_MAILTO: ${{ github.repository_owner }}@users.noreply.github.com
         run: |
           set +e
           python scripts/sweep_candidates.py > candidates.md

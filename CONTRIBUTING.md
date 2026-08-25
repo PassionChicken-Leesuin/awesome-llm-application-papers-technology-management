@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv` is the source of truth**, and the papers section of `README.md` is generated from it. Never edit the README between the `AUTOGEN:PAPERS` markers by hand.
+Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv` is the source of truth**, and the generated parts of `README.md` — the paper-count badge, the Contents (with per-section counts), and the Papers tables — are built from it. Never edit the README between the `AUTOGEN:PAPERS` markers by hand.
 
 ## Adding a paper
 
@@ -9,13 +9,13 @@ Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv
 
    | column | meaning |
    |---|---|
-   | `section` | one of the section names listed in `scripts/build_readme.py` (`SECTIONS`) |
+   | `section` | one of the section names listed in `scripts/build_readme.py` (`GROUPS`) |
    | `title` | full paper title, no trailing period |
    | `authors` | `Lastname et al.` |
    | `year` | publication year of the cited version |
    | `venue` | journal/conference, or `arXiv:XXXX.XXXXX` for unpublished preprints |
    | `url` | DOI link preferred; otherwise arXiv abstract page |
-   | `mas` | `yes` if the paper presents an explicitly multi-agent system, else `no` |
+   | `mas` | `yes` if the paper presents an explicitly multi-agent system (adds the purple `MAS` badge), else `no` |
    | `summary` | one clause, ≤ 12 words, telegraphic style matching existing entries |
 
    Row order within a year is preserved, and sections are sorted newest-first by year, so place your row where it should appear among same-year entries.
@@ -30,7 +30,7 @@ Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv
 
 ## Adding a section
 
-Add the section name and a one-line description to `SECTIONS` in `scripts/build_readme.py`, in the position where it should appear. Update the `Contents` links in `README.md` if the new section starts a top-level group.
+Add the section name and a one-line description to `GROUPS` in `scripts/build_readme.py`, under the top-level group where it belongs (or as a new group). The Contents links and counts regenerate automatically.
 
 ## Monthly candidate sweep
 

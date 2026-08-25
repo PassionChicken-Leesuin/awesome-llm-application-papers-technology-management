@@ -5,7 +5,7 @@
 **Hand-picked research papers applying LLMs, LLM agents, and multi-agent systems (MAS) to technology & innovation management (TIM).**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Papers](https://img.shields.io/badge/papers-71-blue)
+![Papers](https://img.shields.io/badge/papers-79-blue)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -26,18 +26,18 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 ## Contents
 
 - **Patent & IP Analytics**
-  - [Patent Classification & Screening](#patent-classification--screening) (2)
-  - [Patent Landscaping & Technology Intelligence](#patent-landscaping--technology-intelligence) (3)
+  - [Patent Classification & Screening](#patent-classification--screening) (3)
+  - [Patent Landscaping & Technology Intelligence](#patent-landscaping--technology-intelligence) (6)
   - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (3)
   - [Patent Drafting & Claim Generation](#patent-drafting--claim-generation) (6)
   - [Patent Quality, Novelty & Valuation](#patent-quality-novelty--valuation) (3)
   - [IP Benchmarks & Evaluation](#ip-benchmarks--evaluation) (6)
   - [IP Domain Models & Surveys](#ip-domain-models--surveys) (2)
-- [Technology Forecasting & Foresight](#technology-forecasting--foresight) (6)
+- [Technology Forecasting & Foresight](#technology-forecasting--foresight) (7)
 - **Scientometrics & Literature Analysis**
   - [Literature Screening & Systematic Reviews](#literature-screening--systematic-reviews) (4)
-  - [Novelty & Impact Prediction of Research](#novelty--impact-prediction-of-research) (4)
-  - [Scientometrics & Science of Science](#scientometrics--science-of-science) (3)
+  - [Novelty & Impact Prediction of Research](#novelty--impact-prediction-of-research) (6)
+  - [Scientometrics & Science of Science](#scientometrics--science-of-science) (4)
   - [Automated Survey Writing & Paper Search](#automated-survey-writing--paper-search) (5)
 - **R&D & Innovation Management**
   - [Idea Generation & Creativity in Innovation](#idea-generation--creativity-in-innovation) (7)
@@ -64,6 +64,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 |---|---|
 | **[Large Language Models for Patent Classification: Strengths, Trade-offs, and the Long Tail Effect](https://arxiv.org/abs/2601.23200)** — Emer et al., 2026, *arXiv:2601.23200*. Compares LLMs vs BERT on CPC; LLMs win on rare subclasses | <a href="https://arxiv.org/abs/2601.23200"><img src="https://img.shields.io/badge/arXiv-2601.23200-b31b1b.svg" alt="arXiv" /></a> |
 | **[Patent Figure Classification using Large Vision-language Models](https://arxiv.org/abs/2501.12751)** — Awale et al., 2025, *arXiv:2501.12751*. LVLMs classify patent figures; PatFigVQA/PatFigCLS datasets | <a href="https://arxiv.org/abs/2501.12751"><img src="https://img.shields.io/badge/arXiv-2501.12751-b31b1b.svg" alt="arXiv" /></a> |
+| **[Do large language models understand patents? Enhancing patent classification through AI-generated summaries](https://doi.org/10.1016/j.wpi.2025.102353)** — Yoshikawa et al., 2025, *World Patent Information*. AI-generated summaries boost LLM patent classification accuracy | <a href="https://doi.org/10.1016/j.wpi.2025.102353"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2025.102353-blue.svg" alt="DOI" /></a> |
 
 </details>
 
@@ -74,6 +75,9 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 
 | Paper | Link |
 |---|---|
+| **[Evaluating the value of LLMs in patent-based technology intelligence: Toward increasing efficiency and reducing expert dependency](https://doi.org/10.1016/j.techfore.2025.124375)** — Park et al., 2026, *Technological Forecasting and Social Change*. Evaluates LLMs replacing expert judgment in patent-based technology intelligence | <a href="https://doi.org/10.1016/j.techfore.2025.124375"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.techfore.2025.124375-blue.svg" alt="DOI" /></a> |
+| **[Generative AI-based intelligent patent summarization for intellectual property knowledge communication and cooperation](https://doi.org/10.1016/j.wpi.2025.102410)** — Trappey et al., 2025, *World Patent Information*. GenAI patent summarization for IP knowledge communication and cooperation | <a href="https://doi.org/10.1016/j.wpi.2025.102410"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2025.102410-blue.svg" alt="DOI" /></a> |
+| **[Integrating Generative Artificial Intelligence techniques into technology function matrix analysis](https://doi.org/10.1016/j.wpi.2025.102352)** — Wang et al., 2025, *World Patent Information*. GenAI automates technology-function matrix construction for patent analysis | <a href="https://doi.org/10.1016/j.wpi.2025.102352"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2025.102352-blue.svg" alt="DOI" /></a> |
 | **[Automotive innovation landscaping using LLM](https://arxiv.org/abs/2409.14436)** — Gorain et al., 2024, *arXiv:2409.14436*. Prompt-based LLM patent landscaping for fuel-cell innovation mapping | <a href="https://arxiv.org/abs/2409.14436"><img src="https://img.shields.io/badge/arXiv-2409.14436-b31b1b.svg" alt="arXiv" /></a> |
 | **[Towards Automated Patent Workflows: AI-Orchestrated Multi-Agent Framework for Intellectual Property Management and Analysis](https://arxiv.org/abs/2409.19006)** — Srinivas et al., 2024, *OWA Workshop @ NeurIPS 2024*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> PatExpert meta-agent orchestrates end-to-end patent analysis workflows | <a href="https://arxiv.org/abs/2409.19006"><img src="https://img.shields.io/badge/arXiv-2409.19006-b31b1b.svg" alt="arXiv" /></a> |
 | **[EvoPat: A Multi-LLM-based Patents Summarization and Analysis Agent](https://arxiv.org/abs/2412.18100)** — Wang et al., 2024, *arXiv:2412.18100*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Multi-LLM agent summarizes patents and tracks innovation evolution | <a href="https://arxiv.org/abs/2412.18100"><img src="https://img.shields.io/badge/arXiv-2412.18100-b31b1b.svg" alt="arXiv" /></a> |
@@ -159,6 +163,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 |---|---|
 | **[Anticipating Innovation Using Large Language Models](https://arxiv.org/abs/2605.04875)** — Fenoaltea et al., 2026, *arXiv:2605.04875*. LLMs anticipate future innovation and technology emergence | <a href="https://arxiv.org/abs/2605.04875"><img src="https://img.shields.io/badge/arXiv-2605.04875-b31b1b.svg" alt="arXiv" /></a> |
 | **[Tuning into whispered frequencies: Harnessing Large Language Models to detect Weak Signals in complex socio-technical systems](https://doi.org/10.1016/j.engappai.2026.114738)** — Lombardi et al., 2026, *Engineering Applications of Artificial Intelligence*. LLM pipeline detects foresight weak signals in socio-technical texts | <a href="https://doi.org/10.1016/j.engappai.2026.114738"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.engappai.2026.114738-blue.svg" alt="DOI" /></a> |
+| **[AI-driven opportunity forecasting for technology startup identification: Integrating graph embedding, LLMs, and informetric analysis](https://doi.org/10.1016/j.techfore.2026.124649)** — Zhai et al., 2026, *Technological Forecasting and Social Change*. Graph embedding plus LLM informetrics forecast startup technology opportunities | <a href="https://doi.org/10.1016/j.techfore.2026.124649"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.techfore.2026.124649-blue.svg" alt="DOI" /></a> |
 | **[DiTTO-LLM: Framework for Discovering Topic-based Technology Opportunities via Large Language Model](https://arxiv.org/abs/2509.09724)** — Kim et al., 2025, *arXiv:2509.09724*. LLM tracks patent topic evolution to discover technology opportunities | <a href="https://arxiv.org/abs/2509.09724"><img src="https://img.shields.io/badge/arXiv-2509.09724-b31b1b.svg" alt="arXiv" /></a> |
 | **[Predicting New Research Directions in Materials Science using Large Language Models and Concept Graphs](https://arxiv.org/abs/2506.16824)** — Marwitz et al., 2025, *arXiv:2506.16824*. LLM concept extraction plus graph model predicts unexplored combinations | <a href="https://arxiv.org/abs/2506.16824"><img src="https://img.shields.io/badge/arXiv-2506.16824-b31b1b.svg" alt="arXiv" /></a> |
 | **[WISDOM: An AI-powered framework for emerging research detection using weak signal analysis and advanced topic modeling](https://arxiv.org/abs/2409.15340)** — Ebadi et al., 2024, *arXiv:2409.15340*. Weak-signal analysis plus topic modeling detects emerging research themes | <a href="https://arxiv.org/abs/2409.15340"><img src="https://img.shields.io/badge/arXiv-2409.15340-b31b1b.svg" alt="arXiv" /></a> |
@@ -190,7 +195,9 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | Paper | Link |
 |---|---|
 | **[Are Large Language Models able to Predict Highly Cited Papers? Evidence from Statistical Publications](https://arxiv.org/abs/2601.13627)** — Ye et al., 2026, *arXiv:2601.13627*. Tests LLM citation-impact prediction on statistics publications | <a href="https://arxiv.org/abs/2601.13627"><img src="https://img.shields.io/badge/arXiv-2601.13627-b31b1b.svg" alt="arXiv" /></a> |
+| **[Can small and reasoning large language models score journal articles for research quality and do averaging and few-shot help?](https://doi.org/10.1007/s11192-026-05585-2)** — Thelwall & Mohammadi, 2026, *Scientometrics*. Small/reasoning LLMs score research quality; averaging across queries helps | <a href="https://doi.org/10.1007/s11192-026-05585-2"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05585--2-blue.svg" alt="DOI" /></a> |
 | **[Automated Novelty Evaluation of Academic Paper: A Collaborative Approach Integrating Human and Large Language Model Knowledge](https://doi.org/10.1002/asi.70005)** — Wu et al., 2025, *JASIST*. Human-LLM knowledge fusion predicts method novelty of papers | <a href="https://doi.org/10.1002/asi.70005"><img src="https://img.shields.io/badge/DOI-10.1002%2Fasi.70005-blue.svg" alt="DOI" /></a> |
+| **[Evaluating the predictive capacity of ChatGPT for academic peer review outcomes across multiple platforms](https://doi.org/10.1007/s11192-025-05287-1)** — Thelwall & Yaghi, 2025, *Scientometrics*. ChatGPT predicts peer-review outcomes across three publishing platforms | <a href="https://doi.org/10.1007/s11192-025-05287-1"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--025--05287--1-blue.svg" alt="DOI" /></a> |
 | **[Evaluating and Enhancing Large Language Models for Novelty Assessment in Scholarly Publications](https://arxiv.org/abs/2409.16605)** — Lin et al., 2024, *AISD @ ACL 2025*. SchNovel benchmark and RAG-Novelty for scholarly novelty assessment | <a href="https://arxiv.org/abs/2409.16605"><img src="https://img.shields.io/badge/arXiv-2409.16605-b31b1b.svg" alt="arXiv" /></a> |
 | **[From Words to Worth: Newborn Article Impact Prediction with LLM](https://arxiv.org/abs/2408.03934)** — Zhao et al., 2024, *arXiv:2408.03934*. Fine-tuned LLM predicts article impact from title and abstract | <a href="https://arxiv.org/abs/2408.03934"><img src="https://img.shields.io/badge/arXiv-2408.03934-b31b1b.svg" alt="arXiv" /></a> |
 
@@ -203,6 +210,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 
 | Paper | Link |
 |---|---|
+| **[Large language models for scientometric mapping of scientific controversy: A validated hybrid AI–Human framework](https://doi.org/10.1007/s11192-026-05681-3)** — Susnjak et al., 2026, *Scientometrics*. Validated hybrid LLM-human framework maps scientific controversy stances | <a href="https://doi.org/10.1007/s11192-026-05681-3"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05681--3-blue.svg" alt="DOI" /></a> |
 | **[AI-Augmented Bibliometric Framework: A Paradigm Shift with Agentic AI for Dynamic, Snippet-Based Research Analysis](https://arxiv.org/abs/2511.21745)** — Bara et al., 2025, *arXiv:2511.21745*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Agentic AI replaces static bibliometric keyword analysis | <a href="https://arxiv.org/abs/2511.21745"><img src="https://img.shields.io/badge/arXiv-2511.21745-b31b1b.svg" alt="arXiv" /></a> |
 | **[The Empowerment of Science of Science by Large Language Models: New Tools and Methods](https://arxiv.org/abs/2511.15370)** — Liang et al., 2025, *arXiv:2511.15370*. Survey of LLM tools for scientometrics and research front detection | <a href="https://arxiv.org/abs/2511.15370"><img src="https://img.shields.io/badge/arXiv-2511.15370-b31b1b.svg" alt="arXiv" /></a> |
 | **[SciSciGPT: Advancing Human-AI Collaboration in the Science of Science](https://arxiv.org/abs/2504.05559)** — Shao et al., 2025, *arXiv:2504.05559*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Specialist agents automate science-of-science analytics workflows | <a href="https://arxiv.org/abs/2504.05559"><img src="https://img.shields.io/badge/arXiv-2504.05559-b31b1b.svg" alt="arXiv" /></a> |

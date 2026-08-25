@@ -25,17 +25,17 @@
 <path d="M215.6,169.0 v-9.7 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v9.7 z" fill="#e66767"/>
 <text x="233.3" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
 <rect x="272.6" y="155.3" width="35.3" height="62.7" fill="#3987e5"/>
-<path d="M272.6,153.3 v-41.0 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
+<path d="M272.6,153.3 v-9.7 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v9.7 z" fill="#e66767"/>
 <text x="290.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2024 Q1</text>
 <rect x="329.5" y="124.0" width="35.3" height="94.0" fill="#3987e5"/>
 <path d="M329.5,122.0 v-41.0 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
 <text x="347.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<rect x="386.4" y="108.3" width="35.3" height="109.7" fill="#3987e5"/>
-<path d="M386.4,106.3 v-56.7 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v56.7 z" fill="#e66767"/>
-<text x="404.1" y="39.7" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#c3c2b7">11</text>
+<rect x="386.4" y="124.0" width="35.3" height="94.0" fill="#3987e5"/>
+<path d="M386.4,122.0 v-41.0 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
 <text x="404.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
 <rect x="443.4" y="186.7" width="35.3" height="31.3" fill="#3987e5"/>
 <path d="M443.4,184.7 v-119.3 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v119.3 z" fill="#e66767"/>
+<text x="461.0" y="55.3" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#c3c2b7">10</text>
 <text x="461.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
 <rect x="500.3" y="202.3" width="35.3" height="15.7" fill="#3987e5"/>
 <path d="M500.3,200.3 v-119.3 q0,-4.0 4.0,-4.0 h27.3 q4.0,0 4.0,4.0 v119.3 z" fill="#e66767"/>

@@ -5,7 +5,7 @@
 **Hand-picked research papers applying LLMs, LLM agents, and multi-agent systems (MAS) to technology & innovation management (TIM).**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Papers](https://img.shields.io/badge/papers-91-blue)
+![Papers](https://img.shields.io/badge/papers-87-blue)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -37,7 +37,7 @@ patent analytics · technology forecasting · scientometrics · literature scree
 
 | Venue | Papers |
 |---|---:|
-| arXiv (preprints) | 48 |
+| arXiv (preprints) | 45 |
 | ACL | 3 |
 | Scientometrics | 3 |
 | World Patent Information | 3 |
@@ -49,7 +49,7 @@ patent analytics · technology forecasting · scientometrics · literature scree
 | SIGIR | 2 |
 | SSRN (working papers) | 2 |
 | Technological Forecasting and Social Change | 2 |
-| Others (1 each): AAAI 2026, Advanced Engineering Informatics, AgentScen @ IJCAI 2025, Artificial Intelligence Review, EMNLP 2024, Engineering Applications of Artificial Intelligence, ICML, IEEE Engineering Management Review, JASIST, Journal of Computer Languages, LREC-COLING, Nature Machine Intelligence, Organization Science, Research Synthesis Methods, SIGDIAL 2025, Science Advances, Strategy Science, UIST | 18 |
+| Others (1 each): AAAI 2026, Advanced Engineering Informatics, AgentScen @ IJCAI 2025, Artificial Intelligence Review, EMNLP 2024, Engineering Applications of Artificial Intelligence, ICML, IEEE Engineering Management Review, JASIST, Journal of Computer Languages, LREC-COLING, Nature Machine Intelligence, Organization Science, Research Synthesis Methods, SIGDIAL 2025, Strategy Science, UIST | 17 |
 
 <!-- AUTOGEN:VENUES END -->
 
@@ -68,19 +68,19 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 - **Patent & IP Analytics**
   - [Patent Classification & Screening](#patent-classification--screening) (3)
   - [Patent Landscaping & Technology Intelligence](#patent-landscaping--technology-intelligence) (6)
-  - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (3)
+  - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (2)
   - [Patent Drafting & Claim Generation](#patent-drafting--claim-generation) (7)
   - [Patent Quality, Novelty & Valuation](#patent-quality-novelty--valuation) (3)
   - [IP Benchmarks & Evaluation](#ip-benchmarks--evaluation) (6)
   - [IP Domain Models & Surveys](#ip-domain-models--surveys) (2)
-- [Technology Forecasting & Foresight](#technology-forecasting--foresight) (8)
+- [Technology Forecasting & Foresight](#technology-forecasting--foresight) (6)
 - **Scientometrics & Literature Analysis**
   - [Literature Screening & Systematic Reviews](#literature-screening--systematic-reviews) (6)
   - [Novelty & Impact Prediction of Research](#novelty--impact-prediction-of-research) (6)
   - [Scientometrics & Science of Science](#scientometrics--science-of-science) (5)
   - [Automated Survey Writing & Paper Search](#automated-survey-writing--paper-search) (5)
 - **R&D & Innovation Management**
-  - [Idea Generation & Creativity in Innovation](#idea-generation--creativity-in-innovation) (11)
+  - [Idea Generation & Creativity in Innovation](#idea-generation--creativity-in-innovation) (10)
   - [New Product Development & R&D Management](#new-product-development--rd-management) (2)
 - **Simulation, Strategy & Discovery**
   - [Market & Consumer Simulation](#market--consumer-simulation) (6)
@@ -132,7 +132,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | Paper | Link |
 |---|---|
 | **[Enhancing the Patent Matching Capability of Large Language Models via the Memory Graph](https://arxiv.org/abs/2504.14845)** — Xiong et al., 2025, *SIGIR 2025*. MemGraph entity/ontology memory boosts LLM patent matching | <a href="https://arxiv.org/abs/2504.14845"><img src="https://img.shields.io/badge/arXiv-2504.14845-b31b1b.svg" alt="arXiv" /></a> |
-| **[PaECTER: Patent-level Representation Learning using Citation-informed Transformers](https://arxiv.org/abs/2402.19411)** — Ghosh et al., 2024, *arXiv:2402.19411*. Citation-informed patent embeddings for prior-art similarity search | <a href="https://arxiv.org/abs/2402.19411"><img src="https://img.shields.io/badge/arXiv-2402.19411-b31b1b.svg" alt="arXiv" /></a> |
 | **[Large Language Model Informed Patent Image Retrieval](https://arxiv.org/abs/2404.19360)** — Lo et al., 2024, *PatentSemTech @ SIGIR 2024*. LLM-generated captions improve patent drawing retrieval | <a href="https://arxiv.org/abs/2404.19360"><img src="https://img.shields.io/badge/arXiv-2404.19360-b31b1b.svg" alt="arXiv" /></a> |
 
 </details>
@@ -208,8 +207,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[ForeSci: Evaluating LLM Agents for Forward-Looking AI Research Judgment](https://arxiv.org/abs/2606.00644)** — Tian et al., 2026, *arXiv:2606.00644*. Benchmark tests agent forecasts of future research directions | <a href="https://arxiv.org/abs/2606.00644"><img src="https://img.shields.io/badge/arXiv-2606.00644-b31b1b.svg" alt="arXiv" /></a> |
 | **[DiTTO-LLM: Framework for Discovering Topic-based Technology Opportunities via Large Language Model](https://arxiv.org/abs/2509.09724)** — Kim et al., 2025, *arXiv:2509.09724*. LLM tracks patent topic evolution to discover technology opportunities | <a href="https://arxiv.org/abs/2509.09724"><img src="https://img.shields.io/badge/arXiv-2509.09724-b31b1b.svg" alt="arXiv" /></a> |
 | **[Predicting New Research Directions in Materials Science using Large Language Models and Concept Graphs](https://arxiv.org/abs/2506.16824)** — Marwitz et al., 2025, *arXiv:2506.16824*. LLM concept extraction plus graph model predicts unexplored combinations | <a href="https://arxiv.org/abs/2506.16824"><img src="https://img.shields.io/badge/arXiv-2506.16824-b31b1b.svg" alt="arXiv" /></a> |
-| **[WISDOM: An AI-powered framework for emerging research detection using weak signal analysis and advanced topic modeling](https://arxiv.org/abs/2409.15340)** — Ebadi et al., 2024, *arXiv:2409.15340*. Weak-signal analysis plus topic modeling detects emerging research themes | <a href="https://arxiv.org/abs/2409.15340"><img src="https://img.shields.io/badge/arXiv-2409.15340-b31b1b.svg" alt="arXiv" /></a> |
-| **[Forecasting high-impact research topics via machine learning on evolving knowledge graphs](https://arxiv.org/abs/2402.08640)** — Gu et al., 2024, *arXiv:2402.08640*. Evolving knowledge graph forecasts high-impact topics; LLM-benchmarked | <a href="https://arxiv.org/abs/2402.08640"><img src="https://img.shields.io/badge/arXiv-2402.08640-b31b1b.svg" alt="arXiv" /></a> |
 
 </details>
 
@@ -292,7 +289,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[Exploring Design of Multi-Agent LLM Dialogues for Research Ideation](https://arxiv.org/abs/2507.08350)** — Ueda et al., 2025, *SIGDIAL 2025*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Agent roles, cohort size, depth shape idea novelty | <a href="https://arxiv.org/abs/2507.08350"><img src="https://img.shields.io/badge/arXiv-2507.08350-b31b1b.svg" alt="arXiv" /></a> |
 | **[Deep Ideation: Designing LLM Agents to Generate Novel Research Ideas on Scientific Concept Network](https://arxiv.org/abs/2511.02238)** — Zhao et al., 2025, *arXiv:2511.02238*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Explore-expand-evolve agents mine concept networks for ideas | <a href="https://arxiv.org/abs/2511.02238"><img src="https://img.shields.io/badge/arXiv-2511.02238-b31b1b.svg" alt="arXiv" /></a> |
 | **[The Crowdless Future? Generative AI and Creative Problem-Solving](https://doi.org/10.1287/orsc.2023.18430)** — Boussioux et al., 2024, *Organization Science*. GPT-4 solutions vs crowdsourced solutions in an innovation challenge | <a href="https://doi.org/10.1287/orsc.2023.18430"><img src="https://img.shields.io/badge/DOI-10.1287%2Forsc.2023.18430-blue.svg" alt="DOI" /></a> |
-| **[Generative AI enhances individual creativity but reduces the collective diversity of novel content](https://doi.org/10.1126/sciadv.adn5290)** — Doshi et al., 2024, *Science Advances*. LLM ideas boost individual creativity, shrink collective diversity | <a href="https://doi.org/10.1126/sciadv.adn5290"><img src="https://img.shields.io/badge/DOI-10.1126%2Fsciadv.adn5290-blue.svg" alt="DOI" /></a> |
 | **[Comparing the Ideation Quality of Humans With Generative Artificial Intelligence](https://ieeexplore.ieee.org/document/10398283)** — Joosten et al., 2024, *IEEE Engineering Management Review*. Human vs GPT-4 ideation quality comparison for innovation management | <a href="https://ieeexplore.ieee.org/document/10398283"><img src="https://img.shields.io/badge/IEEE-Xplore-00629B.svg" alt="IEEE Xplore" /></a> |
 | **[Prompting Diverse Ideas: Increasing AI Idea Variance](https://arxiv.org/abs/2402.01727)** — Meincke et al., 2024, *arXiv:2402.01727*. Prompt strategies to raise diversity of LLM-generated product ideas | <a href="https://arxiv.org/abs/2402.01727"><img src="https://img.shields.io/badge/arXiv-2402.01727-b31b1b.svg" alt="arXiv" /></a> |
 | **[Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2409.04109)** — Si et al., 2024, *ICLR 2025*. LLM-generated research ideas judged more novel than experts' | <a href="https://arxiv.org/abs/2409.04109"><img src="https://img.shields.io/badge/arXiv-2409.04109-b31b1b.svg" alt="arXiv" /></a> |

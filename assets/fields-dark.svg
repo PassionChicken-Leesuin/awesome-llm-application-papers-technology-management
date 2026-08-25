@@ -4,8 +4,8 @@
 <rect x="205" y="26" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="260" y="26" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="315" y="26" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
-<rect x="370" y="26" width="52" height="30" rx="4" fill="#2a78d6"/>
-<text x="396.0" y="45.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">3</text>
+<rect x="370" y="26" width="52" height="30" rx="4" fill="#1c5cab"/>
+<text x="396.0" y="45.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">2</text>
 <rect x="425" y="26" width="52" height="30" rx="4" fill="#9ec5f4"/>
 <text x="451.0" y="45.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#0b0b0b">5</text>
 <rect x="480" y="26" width="52" height="30" rx="4" fill="#2a78d6"/>
@@ -29,11 +29,9 @@
 <rect x="205" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="260" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="315" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
-<rect x="370" y="59" width="52" height="30" rx="4" fill="#184f95"/>
-<text x="396.0" y="78.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">1</text>
+<rect x="370" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="425" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
-<rect x="480" y="59" width="52" height="30" rx="4" fill="#184f95"/>
-<text x="506.0" y="78.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">1</text>
+<rect x="480" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="535" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="590" y="59" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="645" y="59" width="52" height="30" rx="4" fill="#184f95"/>
@@ -83,8 +81,8 @@
 <rect x="370" y="125" width="52" height="30" rx="4" fill="#1c5cab"/>
 <text x="396.0" y="144.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">2</text>
 <rect x="425" y="125" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
-<rect x="480" y="125" width="52" height="30" rx="4" fill="#2a78d6"/>
-<text x="506.0" y="144.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">3</text>
+<rect x="480" y="125" width="52" height="30" rx="4" fill="#1c5cab"/>
+<text x="506.0" y="144.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11.5" font-weight="600" fill="#ffffff">2</text>
 <rect x="535" y="125" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="590" y="125" width="52" height="30" rx="4" fill="none" stroke="#2c2c2a" stroke-width="1"/>
 <rect x="645" y="125" width="52" height="30" rx="4" fill="#184f95"/>

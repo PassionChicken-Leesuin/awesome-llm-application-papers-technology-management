@@ -1,74 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" role="img" aria-label="Stacked bars of journal and preprint papers per quarter, 2020 Q3 to 2026 Q3">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" width="900" height="250" role="img" aria-label="Stacked bars of journal and preprint papers per quarter, 2020 Q3 to 2026 Q2">
 <line x1="34" y1="218.0" x2="888" y2="218.0" stroke="#2c2c2a" stroke-width="1"/>
 <text x="28" y="221.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">0</text>
 <line x1="34" y1="171.0" x2="888" y2="171.0" stroke="#2c2c2a" stroke-width="1"/>
-<text x="28" y="174.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">3</text>
+<text x="28" y="174.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">2</text>
 <line x1="34" y1="124.0" x2="888" y2="124.0" stroke="#2c2c2a" stroke-width="1"/>
-<text x="28" y="127.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">6</text>
+<text x="28" y="127.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">4</text>
 <line x1="34" y1="77.0" x2="888" y2="77.0" stroke="#2c2c2a" stroke-width="1"/>
-<text x="28" y="80.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">9</text>
+<text x="28" y="80.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">6</text>
 <line x1="34" y1="30.0" x2="888" y2="30.0" stroke="#2c2c2a" stroke-width="1"/>
-<text x="28" y="33.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">12</text>
+<text x="28" y="33.5" text-anchor="end" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#898781">8</text>
 <rect x="558" y="8" width="10" height="10" rx="2" fill="#3987e5"/>
 <text x="573" y="17" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#c3c2b7">Journals &amp; conferences</text>
 <rect x="723" y="8" width="10" height="10" rx="2" fill="#e66767"/>
 <text x="738" y="17" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#c3c2b7">Preprints (arXiv/SSRN)</text>
-<rect x="40.5" y="202.3" width="21.2" height="15.7" fill="#3987e5"/>
-<text x="51.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2020 Q3</text>
-<text x="85.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
-<text x="119.4" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2021 Q1</text>
-<text x="153.6" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<text x="187.7" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
-<text x="221.9" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
-<text x="256.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2022 Q1</text>
-<text x="290.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<rect x="313.8" y="202.3" width="21.2" height="15.7" fill="#3987e5"/>
-<text x="324.4" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
-<text x="358.5" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
-<rect x="382.1" y="186.7" width="21.2" height="31.3" fill="#3987e5"/>
-<path d="M382.1,184.7 v-9.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v9.7 z" fill="#e66767"/>
-<text x="392.7" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2023 Q1</text>
-<rect x="416.3" y="202.3" width="21.2" height="15.7" fill="#3987e5"/>
-<text x="426.8" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<rect x="450.4" y="202.3" width="21.2" height="15.7" fill="#3987e5"/>
-<path d="M450.4,200.3 v-9.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v9.7 z" fill="#e66767"/>
-<text x="461.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
-<rect x="484.6" y="171.0" width="21.2" height="47.0" fill="#3987e5"/>
-<path d="M484.6,169.0 v-9.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v9.7 z" fill="#e66767"/>
-<text x="495.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
-<rect x="518.7" y="155.3" width="21.2" height="62.7" fill="#3987e5"/>
-<path d="M518.7,153.3 v-9.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v9.7 z" fill="#e66767"/>
-<text x="529.3" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2024 Q1</text>
-<rect x="552.9" y="124.0" width="21.2" height="94.0" fill="#3987e5"/>
-<path d="M552.9,122.0 v-56.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v56.7 z" fill="#e66767"/>
-<text x="563.5" y="55.3" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#c3c2b7">10</text>
-<text x="563.5" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<rect x="587.1" y="124.0" width="21.2" height="94.0" fill="#3987e5"/>
-<path d="M587.1,122.0 v-41.0 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
-<text x="597.6" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
-<rect x="621.2" y="186.7" width="21.2" height="31.3" fill="#3987e5"/>
-<path d="M621.2,184.7 v-119.3 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v119.3 z" fill="#e66767"/>
-<text x="631.8" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
-<rect x="655.4" y="202.3" width="21.2" height="15.7" fill="#3987e5"/>
-<path d="M655.4,200.3 v-119.3 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v119.3 z" fill="#e66767"/>
-<text x="666.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2025 Q1</text>
-<rect x="689.5" y="155.3" width="21.2" height="62.7" fill="#3987e5"/>
-<path d="M689.5,153.3 v-72.3 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v72.3 z" fill="#e66767"/>
-<text x="700.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<rect x="723.7" y="155.3" width="21.2" height="62.7" fill="#3987e5"/>
-<path d="M723.7,153.3 v-41.0 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
-<text x="734.3" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
-<rect x="757.9" y="171.0" width="21.2" height="47.0" fill="#3987e5"/>
-<path d="M757.9,169.0 v-72.3 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v72.3 z" fill="#e66767"/>
-<text x="768.4" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
-<rect x="792.0" y="186.7" width="21.2" height="31.3" fill="#3987e5"/>
-<path d="M792.0,184.7 v-56.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v56.7 z" fill="#e66767"/>
-<text x="802.6" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2026 Q1</text>
-<rect x="826.2" y="186.7" width="21.2" height="31.3" fill="#3987e5"/>
-<path d="M826.2,184.7 v-41.0 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
-<text x="836.8" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
-<path d="M860.3,218.0 v-11.7 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v11.7 z" fill="#e66767"/>
-<text x="870.9" y="196.3" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#c3c2b7">1</text>
-<text x="870.9" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
+<rect x="40.8" y="194.5" width="22.1" height="23.5" fill="#3987e5"/>
+<text x="51.8" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2020 Q3</text>
+<text x="87.4" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
+<text x="123.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2021 Q1</text>
+<text x="158.5" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
+<text x="194.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
+<text x="229.7" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
+<text x="265.3" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2022 Q1</text>
+<text x="300.9" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
+<rect x="325.4" y="194.5" width="22.1" height="23.5" fill="#3987e5"/>
+<text x="336.5" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
+<text x="372.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
+<rect x="396.6" y="194.5" width="22.1" height="23.5" fill="#3987e5"/>
+<path d="M396.6,192.5 v-17.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v17.5 z" fill="#e66767"/>
+<text x="407.6" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2023 Q1</text>
+<text x="443.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
+<path d="M467.8,218.0 v-19.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v19.5 z" fill="#e66767"/>
+<text x="478.8" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
+<rect x="503.3" y="147.5" width="22.1" height="70.5" fill="#3987e5"/>
+<text x="514.4" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
+<rect x="538.9" y="194.5" width="22.1" height="23.5" fill="#3987e5"/>
+<path d="M538.9,192.5 v-17.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v17.5 z" fill="#e66767"/>
+<text x="550.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2024 Q1</text>
+<rect x="574.5" y="147.5" width="22.1" height="70.5" fill="#3987e5"/>
+<path d="M574.5,145.5 v-17.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v17.5 z" fill="#e66767"/>
+<text x="585.5" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
+<rect x="610.1" y="100.5" width="22.1" height="117.5" fill="#3987e5"/>
+<path d="M610.1,98.5 v-64.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v64.5 z" fill="#e66767"/>
+<text x="621.1" y="24.0" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#c3c2b7">8</text>
+<text x="621.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
+<rect x="645.7" y="171.0" width="22.1" height="47.0" fill="#3987e5"/>
+<path d="M645.7,169.0 v-111.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v111.5 z" fill="#e66767"/>
+<text x="656.7" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
+<rect x="681.3" y="194.5" width="22.1" height="23.5" fill="#3987e5"/>
+<path d="M681.3,192.5 v-111.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v111.5 z" fill="#e66767"/>
+<text x="692.3" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2025 Q1</text>
+<rect x="716.8" y="124.0" width="22.1" height="94.0" fill="#3987e5"/>
+<path d="M716.8,122.0 v-41.0 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
+<text x="727.9" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
+<rect x="752.4" y="124.0" width="22.1" height="94.0" fill="#3987e5"/>
+<path d="M752.4,122.0 v-41.0 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v41.0 z" fill="#e66767"/>
+<text x="763.5" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q3</text>
+<rect x="788.0" y="147.5" width="22.1" height="70.5" fill="#3987e5"/>
+<path d="M788.0,145.5 v-88.0 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v88.0 z" fill="#e66767"/>
+<text x="799.0" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
+<rect x="823.6" y="171.0" width="22.1" height="47.0" fill="#3987e5"/>
+<path d="M823.6,169.0 v-111.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v111.5 z" fill="#e66767"/>
+<text x="834.6" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2026 Q1</text>
+<rect x="859.2" y="171.0" width="22.1" height="47.0" fill="#3987e5"/>
+<path d="M859.2,169.0 v-64.5 q0,-4.0 4.0,-4.0 h14.1 q4.0,0 4.0,4.0 v64.5 z" fill="#e66767"/>
+<text x="870.2" y="94.5" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#c3c2b7">5</text>
+<text x="870.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>
 <line x1="34" y1="218" x2="888" y2="218" stroke="#383835" stroke-width="1"/>
 </svg>

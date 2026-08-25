@@ -5,11 +5,12 @@
 **Hand-picked research papers applying LLMs, LLM agents, and multi-agent systems (MAS) to technology & innovation management (TIM).**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![Papers](https://img.shields.io/badge/papers-91-blue)
+![Papers](https://img.shields.io/badge/papers-66-blue)
+![Adjacent](https://img.shields.io/badge/adjacent-26-lightgrey)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-patent analytics · technology forecasting · scientometrics · literature screening · R&D & innovation management · market simulation
+patent analytics · technology forecasting · scientometrics · R&D & innovation management · market simulation
 
 </div>
 
@@ -20,7 +21,7 @@ patent analytics · technology forecasting · scientometrics · literature scree
   <img alt="Stacked bar chart of journal and preprint papers per quarter" src="assets/trend-light.svg" width="100%">
 </picture>
 
-*Quarterly counts, dated by first public appearance (arXiv posting or journal online date). Blue = journals & conferences, red = preprints (arXiv/SSRN).*
+*Core list only. Quarterly counts, dated by first public appearance (arXiv posting or journal online date). Blue = journals & conferences, red = preprints (arXiv/SSRN).*
 
 ### Which areas peak when
 
@@ -29,7 +30,7 @@ patent analytics · technology forecasting · scientometrics · literature scree
   <img alt="Heatmap of papers per research area per quarter" src="assets/fields-light.svg" width="100%">
 </picture>
 
-*Papers per research area per quarter — the hot cells show each cluster's peak period.*
+*Core papers per research area per quarter — the hot cells show each cluster's peak period.*
 
 <!-- AUTOGEN:VENUES BEGIN (generated from data/papers.tsv) -->
 
@@ -37,20 +38,17 @@ patent analytics · technology forecasting · scientometrics · literature scree
 
 | Venue | Papers |
 |---|---:|
-| arXiv (preprints) | 46 |
-| World Patent Information | 5 |
+| arXiv (preprints) | 31 |
+| World Patent Information | 4 |
 | ACL | 3 |
 | Scientometrics | 3 |
-| ICLR | 2 |
 | ICML | 2 |
 | Journal of Product Innovation Management | 2 |
-| NAACL | 2 |
 | Nature | 2 |
-| NeurIPS | 2 |
 | SIGIR | 2 |
 | SSRN (working papers) | 2 |
 | Technological Forecasting and Social Change | 2 |
-| Others (1 each): AAAI 2026, Advanced Engineering Informatics, AgentScen @ IJCAI 2025, Artificial Intelligence Review, EMNLP 2024, Engineering Applications of Artificial Intelligence, IEEE Engineering Management Review, JASIST, Journal of Computer Languages, LREC-COLING, Nature Machine Intelligence, Organization Science, Research Synthesis Methods, SIGDIAL 2025, Strategy Science, UIST | 16 |
+| Others (1 each): AAAI 2026, Advanced Engineering Informatics, AgentScen @ IJCAI 2025, EMNLP 2024, Engineering Applications of Artificial Intelligence, ICLR, IEEE Engineering Management Review, JASIST, NAACL, NeurIPS, Organization Science, SIGDIAL 2025, Strategy Science | 13 |
 
 <!-- AUTOGEN:VENUES END -->
 
@@ -58,7 +56,7 @@ patent analytics · technology forecasting · scientometrics · literature scree
 
 Most agent paper lists collect research *on* agent architectures (memory, planning, coordination). This list collects the complement: research that *uses* agents on real TIM tasks — the papers that end up scattered across *TFSC*, *Scientometrics*, *World Patent Information*, management journals, and application tracks, and therefore rarely appear in ML-centric lists.
 
-**Inclusion criteria**: peer-reviewed papers or public preprints (arXiv/SSRN) where an LLM or LLM-agent system is applied to and evaluated on a TIM task. Tools without papers, blog posts, and pure architecture papers are out of scope.
+**Inclusion criteria — two tiers.** The **core list** collects peer-reviewed papers or public preprints (arXiv/SSRN) where an LLM or LLM-agent system is applied to and evaluated on a TIM task *directly* — patents and IP, technology foresight, innovation and R&D management, and market simulation for management research. A separate **[Adjacent & enabling methods](#adjacent--enabling-methods)** tier collects benchmarks, domain models, surveys, generic-domain analogues (e.g. medical systematic-review screening), and landmark agent frameworks that TIM applications build on; these are excluded from the headline count and charts. Tools without papers, blog posts, and pure architecture papers are out of scope entirely.
 
 Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps OpenAlex and Semantic Scholar for candidates and opens a review issue; humans curate (see [CONTRIBUTING.md](CONTRIBUTING.md)). The list itself lives in `data/papers.tsv`; the contents and papers sections below are generated from it.
 
@@ -69,30 +67,26 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 - **Patent & IP Analytics**
   - [Patent Classification & Screening](#patent-classification--screening) (3)
   - [Patent Landscaping & Technology Intelligence](#patent-landscaping--technology-intelligence) (6)
-  - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (2)
+  - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (3)
   - [Patent Drafting & Claim Generation](#patent-drafting--claim-generation) (8)
   - [Patent Quality, Novelty & Valuation](#patent-quality-novelty--valuation) (3)
-  - [IP Benchmarks & Evaluation](#ip-benchmarks--evaluation) (7)
-  - [IP Domain Models & Surveys](#ip-domain-models--surveys) (2)
 - [Technology Forecasting & Foresight](#technology-forecasting--foresight) (6)
 - **Scientometrics & Literature Analysis**
-  - [Literature Screening & Systematic Reviews](#literature-screening--systematic-reviews) (6)
   - [Novelty & Impact Prediction of Research](#novelty--impact-prediction-of-research) (6)
   - [Scientometrics & Science of Science](#scientometrics--science-of-science) (5)
-  - [Automated Survey Writing & Paper Search](#automated-survey-writing--paper-search) (5)
 - **R&D & Innovation Management**
   - [Idea Generation & Creativity in Innovation](#idea-generation--creativity-in-innovation) (11)
   - [New Product Development & R&D Management](#new-product-development--rd-management) (2)
 - **Simulation, Strategy & Discovery**
-  - [Market & Consumer Simulation](#market--consumer-simulation) (7)
+  - [Market & Consumer Simulation](#market--consumer-simulation) (6)
   - [Strategy & Decision-Making](#strategy--decision-making) (1)
-  - [Scientific Discovery Agents](#scientific-discovery-agents) (7)
-- [Adjacent: General MAS Frameworks & Finance](#adjacent-general-mas-frameworks--finance) (4)
+  - [Scientific Discovery Agents](#scientific-discovery-agents) (6)
+- [Adjacent & enabling methods](#adjacent--enabling-methods) (26)
 - [Related lists](#related-lists)
 
 ## Papers
 
-`MAS` badge marks explicitly multi-agent systems. Newest first within each section.
+66 core papers. `MAS` badge marks explicitly multi-agent systems. Newest first within each section.
 
 ### Patent & IP Analytics
 
@@ -132,6 +126,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 
 | Paper | Link |
 |---|---|
+| **[LLM-powered Real-time Patent Citation Recommendation for Financial Technologies](https://arxiv.org/abs/2601.16775)** — Deng et al., 2026, *arXiv:2601.16775*. Real-time LLM-embedding citation recommendation over growing patent corpus | <a href="https://arxiv.org/abs/2601.16775"><img src="https://img.shields.io/badge/arXiv-2601.16775-b31b1b.svg" alt="arXiv" /></a> |
 | **[Enhancing the Patent Matching Capability of Large Language Models via the Memory Graph](https://arxiv.org/abs/2504.14845)** — Xiong et al., 2025, *SIGIR 2025*. MemGraph entity/ontology memory boosts LLM patent matching | <a href="https://arxiv.org/abs/2504.14845"><img src="https://img.shields.io/badge/arXiv-2504.14845-b31b1b.svg" alt="arXiv" /></a> |
 | **[Large Language Model Informed Patent Image Retrieval](https://arxiv.org/abs/2404.19360)** — Lo et al., 2024, *PatentSemTech @ SIGIR 2024*. LLM-generated captions improve patent drawing retrieval | <a href="https://arxiv.org/abs/2404.19360"><img src="https://img.shields.io/badge/arXiv-2404.19360-b31b1b.svg" alt="arXiv" /></a> |
 
@@ -169,35 +164,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 </details>
 
 <details open>
-<summary><h4>IP Benchmarks & Evaluation</h4></summary>
-
-*Benchmarks and metrics for LLM performance on intellectual-property tasks.*
-
-| Paper | Link |
-|---|---|
-| **[Towards Better Evaluation for Generated Patent Claims](https://arxiv.org/abs/2505.11095)** — Jiang et al., 2025, *arXiv:2505.11095*. Patent-CE benchmark and PatClaimEval for claim evaluation | <a href="https://arxiv.org/abs/2505.11095"><img src="https://img.shields.io/badge/arXiv-2505.11095-b31b1b.svg" alt="arXiv" /></a> |
-| **[IPBench: Benchmarking the Knowledge of Large Language Models in Intellectual Property](https://arxiv.org/abs/2504.15524)** — Wang et al., 2025, *arXiv:2504.15524*. Comprehensive IP-knowledge benchmark; 10 tasks, 20 IP scenarios | <a href="https://arxiv.org/abs/2504.15524"><img src="https://img.shields.io/badge/arXiv-2504.15524-b31b1b.svg" alt="arXiv" /></a> |
-| **[PatentScore: Multi-dimensional Evaluation of LLM-Generated Patent Claims](https://arxiv.org/abs/2505.19345)** — Yoo et al., 2025, *arXiv:2505.19345*. Legal-structure-aware metric scoring LLM-generated claims | <a href="https://arxiv.org/abs/2505.19345"><img src="https://img.shields.io/badge/arXiv-2505.19345-b31b1b.svg" alt="arXiv" /></a> |
-| **[MoZIP: A Multilingual Benchmark to Evaluate Large Language Models in Intellectual Property](https://arxiv.org/abs/2402.16389)** — Ni et al., 2024, *LREC-COLING 2024*. Multilingual IP quiz/QA/patent-matching benchmark plus MoZi model | <a href="https://arxiv.org/abs/2402.16389"><img src="https://img.shields.io/badge/arXiv-2402.16389-b31b1b.svg" alt="arXiv" /></a> |
-| **[IPEval: A Bilingual Intellectual Property Agency Consultation Evaluation Benchmark for Large Language Models](https://arxiv.org/abs/2406.12386)** — Wang et al., 2024, *arXiv:2406.12386*. Bilingual patent-agent exam benchmark for LLM IP competence | <a href="https://arxiv.org/abs/2406.12386"><img src="https://img.shields.io/badge/arXiv-2406.12386-b31b1b.svg" alt="arXiv" /></a> |
-| **[PatentEval: Understanding Errors in Patent Generation](https://arxiv.org/abs/2406.06589)** — Zuo et al., 2024, *NAACL 2024*. Error typology and human-annotated benchmark for patent generation | <a href="https://arxiv.org/abs/2406.06589"><img src="https://img.shields.io/badge/arXiv-2406.06589-b31b1b.svg" alt="arXiv" /></a> |
-| **[Evaluating generative patent language models](https://doi.org/10.1016/j.wpi.2023.102173)** — Lee, 2023, *World Patent Information*. Autocomplete-based evaluation of generative patent language models | <a href="https://doi.org/10.1016/j.wpi.2023.102173"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2023.102173-blue.svg" alt="DOI" /></a> |
-
-</details>
-
-<details open>
-<summary><h4>IP Domain Models & Surveys</h4></summary>
-
-*Domain-adapted models and surveys of NLP/LLM methods in the patent domain.*
-
-| Paper | Link |
-|---|---|
-| **[Natural Language Processing in the Patent Domain: A Survey](https://arxiv.org/abs/2403.04105)** — Jiang et al., 2025, *Artificial Intelligence Review*. Survey of LLM/NLP patent tasks, datasets, and methods | <a href="https://arxiv.org/abs/2403.04105"><img src="https://img.shields.io/badge/arXiv-2403.04105-b31b1b.svg" alt="arXiv" /></a> |
-| **[PatentGPT: A Large Language Model for Intellectual Property](https://arxiv.org/abs/2404.18255)** — Bai et al., 2024, *arXiv:2404.18255*. IP-domain-trained LLM; beats GPT-4 on China patent agent exam | <a href="https://arxiv.org/abs/2404.18255"><img src="https://img.shields.io/badge/arXiv-2404.18255-b31b1b.svg" alt="arXiv" /></a> |
-
-</details>
-
-<details open>
 <summary><h3>Technology Forecasting & Foresight</h3></summary>
 
 *Emerging-technology detection, weak signals, opportunity discovery, trend prediction.*
@@ -214,22 +180,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 </details>
 
 ### Scientometrics & Literature Analysis
-
-<details open>
-<summary><h4>Literature Screening & Systematic Reviews</h4></summary>
-
-*LLMs as screeners in systematic reviews — structurally the same include/exclude task as valid-patent selection.*
-
-| Paper | Link |
-|---|---|
-| **[Systematic Literature Reviews With Two Multi-Agentic Systems And Human-In-The-Loop](https://arxiv.org/abs/2607.21920)** — Ren et al., 2026, *arXiv:2607.21920*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Persona agents with cross-review reproduce a published meta-analysis | <a href="https://arxiv.org/abs/2607.21920"><img src="https://img.shields.io/badge/arXiv-2607.21920-b31b1b.svg" alt="arXiv" /></a> |
-| **[LatteReview: A Multi-Agent Framework for Systematic Review Automation Using Large Language Models](https://arxiv.org/abs/2501.05468)** — Rouzrokh et al., 2025, *arXiv:2501.05468*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Modular reviewer agents automate screening and data extraction | <a href="https://arxiv.org/abs/2501.05468"><img src="https://img.shields.io/badge/arXiv-2501.05468-b31b1b.svg" alt="arXiv" /></a> |
-| **[The Promise and Challenges of Using LLMs to Accelerate the Screening Process of Systematic Reviews](https://arxiv.org/abs/2404.15667)** — Huotala et al., 2024, *arXiv:2404.15667*. GPT-3.5/4 vs humans on title-abstract screening; prompt strategies compared | <a href="https://arxiv.org/abs/2404.15667"><img src="https://img.shields.io/badge/arXiv-2404.15667-b31b1b.svg" alt="arXiv" /></a> |
-| **[Can large language models replace humans in systematic reviews? Evaluating GPT-4's efficacy in screening and extracting data from peer-reviewed and grey literature in multiple languages](https://doi.org/10.1002/jrsm.1715)** — Khraisha et al., 2024, *Research Synthesis Methods*. GPT-4 screening and data extraction across languages and literature types | <a href="https://doi.org/10.1002/jrsm.1715"><img src="https://img.shields.io/badge/DOI-10.1002%2Fjrsm.1715-blue.svg" alt="DOI" /></a> |
-| **[High-performance automated abstract screening with large language model ensembles](https://arxiv.org/abs/2411.02451)** — Sanghera et al., 2024, *arXiv:2411.02451*. LLM ensembles match/exceed human accuracy on Cochrane review screening | <a href="https://arxiv.org/abs/2411.02451"><img src="https://img.shields.io/badge/arXiv-2411.02451-b31b1b.svg" alt="arXiv" /></a> |
-| **[Screening articles for systematic reviews with ChatGPT](https://doi.org/10.1016/j.cola.2024.101287)** — Syriani et al., 2024, *Journal of Computer Languages*. Large-scale evaluation of ChatGPT as a systematic review screener | <a href="https://doi.org/10.1016/j.cola.2024.101287"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.cola.2024.101287-blue.svg" alt="DOI" /></a> |
-
-</details>
 
 <details open>
 <summary><h4>Novelty & Impact Prediction of Research</h4></summary>
@@ -259,21 +209,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[The Empowerment of Science of Science by Large Language Models: New Tools and Methods](https://arxiv.org/abs/2511.15370)** — Liang et al., 2025, *arXiv:2511.15370*. Survey of LLM tools for scientometrics and research front detection | <a href="https://arxiv.org/abs/2511.15370"><img src="https://img.shields.io/badge/arXiv-2511.15370-b31b1b.svg" alt="arXiv" /></a> |
 | **[SciSciGPT: Advancing Human-AI Collaboration in the Science of Science](https://arxiv.org/abs/2504.05559)** — Shao et al., 2025, *arXiv:2504.05559*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Specialist agents automate science-of-science analytics workflows | <a href="https://arxiv.org/abs/2504.05559"><img src="https://img.shields.io/badge/arXiv-2504.05559-b31b1b.svg" alt="arXiv" /></a> |
 | **[AgentReview: Exploring Peer Review Dynamics with LLM Agents](https://arxiv.org/abs/2406.12708)** — Jin et al., 2024, *EMNLP 2024*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Reviewer/author/AC agents simulate peer-review dynamics | <a href="https://arxiv.org/abs/2406.12708"><img src="https://img.shields.io/badge/arXiv-2406.12708-b31b1b.svg" alt="arXiv" /></a> |
-
-</details>
-
-<details open>
-<summary><h4>Automated Survey Writing & Paper Search</h4></summary>
-
-*Agents that search, synthesize, and write literature reviews.*
-
-| Paper | Link |
-|---|---|
-| **[PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/abs/2501.10120)** — He et al., 2025, *arXiv:2501.10120*. RL-trained LLM agent for comprehensive scholarly paper retrieval | <a href="https://arxiv.org/abs/2501.10120"><img src="https://img.shields.io/badge/arXiv-2501.10120-b31b1b.svg" alt="arXiv" /></a> |
-| **[Agentic AutoSurvey: Let LLMs Survey LLMs](https://arxiv.org/abs/2509.18661)** — Liu et al., 2025, *arXiv:2509.18661*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Four agents search, cluster, write, and evaluate literature surveys | <a href="https://arxiv.org/abs/2509.18661"><img src="https://img.shields.io/badge/arXiv-2509.18661-b31b1b.svg" alt="arXiv" /></a> |
-| **[SurveyG: A Multi-Agent LLM Framework with Hierarchical Citation Graph for Automated Survey Generation](https://arxiv.org/abs/2510.07733)** — Nguyen et al., 2025, *arXiv:2510.07733*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Citation-graph-guided multi-agent survey generation | <a href="https://arxiv.org/abs/2510.07733"><img src="https://img.shields.io/badge/arXiv-2510.07733-b31b1b.svg" alt="arXiv" /></a> |
-| **[Accelerating Scientific Research Through a Multi-LLM Framework](https://arxiv.org/abs/2502.07960)** — Ramirez-Medina et al., 2025, *arXiv:2502.07960*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Four-agent pipeline retrieves, filters, and synthesizes literature | <a href="https://arxiv.org/abs/2502.07960"><img src="https://img.shields.io/badge/arXiv-2502.07960-b31b1b.svg" alt="arXiv" /></a> |
-| **[AutoSurvey: Large Language Models Can Automatically Write Surveys](https://arxiv.org/abs/2406.10252)** — Wang et al., 2024, *NeurIPS 2024*. End-to-end LLM pipeline for automatic literature survey writing | <a href="https://arxiv.org/abs/2406.10252"><img src="https://img.shields.io/badge/arXiv-2406.10252-b31b1b.svg" alt="arXiv" /></a> |
 
 </details>
 
@@ -326,7 +261,6 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals](https://arxiv.org/abs/2411.10109)** — Park et al., 2024, *arXiv:2411.10109*. Interview-grounded generative agents simulate 1,000 real individuals | <a href="https://arxiv.org/abs/2411.10109"><img src="https://img.shields.io/badge/arXiv-2411.10109-b31b1b.svg" alt="arXiv" /></a> |
 | **[CompeteAI: Understanding the Competition Dynamics in Large Language Model-based Agents](https://arxiv.org/abs/2310.17512)** — Zhao et al., 2024, *ICML 2024*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Competing restaurant agents simulate market competition dynamics | <a href="https://arxiv.org/abs/2310.17512"><img src="https://img.shields.io/badge/arXiv-2310.17512-b31b1b.svg" alt="arXiv" /></a> |
 | **[Using LLMs for Market Research](https://doi.org/10.2139/ssrn.4395751)** — Brand et al., 2023, *SSRN / HBS Working Paper*. GPT elicits realistic consumer preferences and willingness-to-pay | <a href="https://doi.org/10.2139/ssrn.4395751"><img src="https://img.shields.io/badge/DOI-10.2139%2Fssrn.4395751-blue.svg" alt="DOI" /></a> |
-| **[Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442)** — Park et al., 2023, *UIST 2023*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> 25 LLM agents show emergent social behavior; landmark work | <a href="https://arxiv.org/abs/2304.03442"><img src="https://img.shields.io/badge/arXiv-2304.03442-b31b1b.svg" alt="arXiv" /></a> |
 | **[Using Large Language Models to Simulate Multiple Humans and Replicate Human Subject Studies](https://arxiv.org/abs/2208.10264)** — Aher et al., 2023, *ICML 2023*. Turing Experiments replicate classic human-subject studies with LLMs | <a href="https://arxiv.org/abs/2208.10264"><img src="https://img.shields.io/badge/arXiv-2208.10264-b31b1b.svg" alt="arXiv" /></a> |
 
 </details>
@@ -353,9 +287,94 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[The Virtual Lab of AI agents designs new SARS-CoV-2 nanobodies](https://doi.org/10.1038/s41586-025-09442-9)** — Swanson et al., 2025, *Nature*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> AI researcher agents run meetings, design validated nanobodies | <a href="https://doi.org/10.1038/s41586-025-09442-9"><img src="https://img.shields.io/badge/DOI-10.1038%2Fs41586--025--09442--9-blue.svg" alt="DOI" /></a> |
 | **[Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227)** — Schmidgall et al., 2025, *arXiv:2501.04227*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Autonomous agent pipeline runs literature-to-report research workflows | <a href="https://arxiv.org/abs/2501.04227"><img src="https://img.shields.io/badge/arXiv-2501.04227-b31b1b.svg" alt="arXiv" /></a> |
 | **[AgentRxiv: Towards Collaborative Autonomous Research](https://arxiv.org/abs/2503.18102)** — Schmidgall & Moor, 2025, *arXiv:2503.18102*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Agent labs share preprints to accelerate collaborative research | <a href="https://arxiv.org/abs/2503.18102"><img src="https://img.shields.io/badge/arXiv-2503.18102-b31b1b.svg" alt="arXiv" /></a> |
-| **[Augmenting large language models with chemistry tools](https://doi.org/10.1038/s42256-024-00832-8)** — Bran et al., 2024, *Nature Machine Intelligence*. ChemCrow: LLM agent with 18 tools for synthesis and discovery | <a href="https://doi.org/10.1038/s42256-024-00832-8"><img src="https://img.shields.io/badge/DOI-10.1038%2Fs42256--024--00832--8-blue.svg" alt="DOI" /></a> |
 | **[The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)** — Lu et al., 2024, *arXiv:2408.06292*. End-to-end autonomous research agent writes papers for ~$15 | <a href="https://arxiv.org/abs/2408.06292"><img src="https://img.shields.io/badge/arXiv-2408.06292-b31b1b.svg" alt="arXiv" /></a> |
 | **[Autonomous chemical research with large language models](https://doi.org/10.1038/s41586-023-06792-0)** — Boiko et al., 2023, *Nature*. Coscientist agent autonomously plans and executes chemistry experiments | <a href="https://doi.org/10.1038/s41586-023-06792-0"><img src="https://img.shields.io/badge/DOI-10.1038%2Fs41586--023--06792--0-blue.svg" alt="DOI" /></a> |
+
+</details>
+
+## Adjacent & enabling methods
+
+Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical systematic-review screening), and landmark frameworks that TIM applications build on. Kept for reference — **not counted in the headline paper count or charts**.
+
+<details open>
+<summary><h3>IP Benchmarks & Evaluation</h3></summary>
+
+*Benchmarks and metrics for LLM performance on intellectual-property tasks.*
+
+| Paper | Link |
+|---|---|
+| **[Towards Better Evaluation for Generated Patent Claims](https://arxiv.org/abs/2505.11095)** — Jiang et al., 2025, *arXiv:2505.11095*. Patent-CE benchmark and PatClaimEval for claim evaluation | <a href="https://arxiv.org/abs/2505.11095"><img src="https://img.shields.io/badge/arXiv-2505.11095-b31b1b.svg" alt="arXiv" /></a> |
+| **[IPBench: Benchmarking the Knowledge of Large Language Models in Intellectual Property](https://arxiv.org/abs/2504.15524)** — Wang et al., 2025, *arXiv:2504.15524*. Comprehensive IP-knowledge benchmark; 10 tasks, 20 IP scenarios | <a href="https://arxiv.org/abs/2504.15524"><img src="https://img.shields.io/badge/arXiv-2504.15524-b31b1b.svg" alt="arXiv" /></a> |
+| **[PatentScore: Multi-dimensional Evaluation of LLM-Generated Patent Claims](https://arxiv.org/abs/2505.19345)** — Yoo et al., 2025, *arXiv:2505.19345*. Legal-structure-aware metric scoring LLM-generated claims | <a href="https://arxiv.org/abs/2505.19345"><img src="https://img.shields.io/badge/arXiv-2505.19345-b31b1b.svg" alt="arXiv" /></a> |
+| **[MoZIP: A Multilingual Benchmark to Evaluate Large Language Models in Intellectual Property](https://arxiv.org/abs/2402.16389)** — Ni et al., 2024, *LREC-COLING 2024*. Multilingual IP quiz/QA/patent-matching benchmark plus MoZi model | <a href="https://arxiv.org/abs/2402.16389"><img src="https://img.shields.io/badge/arXiv-2402.16389-b31b1b.svg" alt="arXiv" /></a> |
+| **[IPEval: A Bilingual Intellectual Property Agency Consultation Evaluation Benchmark for Large Language Models](https://arxiv.org/abs/2406.12386)** — Wang et al., 2024, *arXiv:2406.12386*. Bilingual patent-agent exam benchmark for LLM IP competence | <a href="https://arxiv.org/abs/2406.12386"><img src="https://img.shields.io/badge/arXiv-2406.12386-b31b1b.svg" alt="arXiv" /></a> |
+| **[PatentEval: Understanding Errors in Patent Generation](https://arxiv.org/abs/2406.06589)** — Zuo et al., 2024, *NAACL 2024*. Error typology and human-annotated benchmark for patent generation | <a href="https://arxiv.org/abs/2406.06589"><img src="https://img.shields.io/badge/arXiv-2406.06589-b31b1b.svg" alt="arXiv" /></a> |
+| **[Evaluating generative patent language models](https://doi.org/10.1016/j.wpi.2023.102173)** — Lee, 2023, *World Patent Information*. Autocomplete-based evaluation of generative patent language models | <a href="https://doi.org/10.1016/j.wpi.2023.102173"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2023.102173-blue.svg" alt="DOI" /></a> |
+
+</details>
+
+<details open>
+<summary><h3>IP Domain Models & Surveys</h3></summary>
+
+*Domain-adapted models and surveys of NLP/LLM methods in the patent domain.*
+
+| Paper | Link |
+|---|---|
+| **[Natural Language Processing in the Patent Domain: A Survey](https://arxiv.org/abs/2403.04105)** — Jiang et al., 2025, *Artificial Intelligence Review*. Survey of LLM/NLP patent tasks, datasets, and methods | <a href="https://arxiv.org/abs/2403.04105"><img src="https://img.shields.io/badge/arXiv-2403.04105-b31b1b.svg" alt="arXiv" /></a> |
+| **[PatentGPT: A Large Language Model for Intellectual Property](https://arxiv.org/abs/2404.18255)** — Bai et al., 2024, *arXiv:2404.18255*. IP-domain-trained LLM; beats GPT-4 on China patent agent exam | <a href="https://arxiv.org/abs/2404.18255"><img src="https://img.shields.io/badge/arXiv-2404.18255-b31b1b.svg" alt="arXiv" /></a> |
+
+</details>
+
+<details open>
+<summary><h3>Literature Screening & Systematic Reviews</h3></summary>
+
+*LLMs as screeners in systematic reviews — structurally the same include/exclude task as valid-patent selection.*
+
+| Paper | Link |
+|---|---|
+| **[Systematic Literature Reviews With Two Multi-Agentic Systems And Human-In-The-Loop](https://arxiv.org/abs/2607.21920)** — Ren et al., 2026, *arXiv:2607.21920*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Persona agents with cross-review reproduce a published meta-analysis | <a href="https://arxiv.org/abs/2607.21920"><img src="https://img.shields.io/badge/arXiv-2607.21920-b31b1b.svg" alt="arXiv" /></a> |
+| **[LatteReview: A Multi-Agent Framework for Systematic Review Automation Using Large Language Models](https://arxiv.org/abs/2501.05468)** — Rouzrokh et al., 2025, *arXiv:2501.05468*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Modular reviewer agents automate screening and data extraction | <a href="https://arxiv.org/abs/2501.05468"><img src="https://img.shields.io/badge/arXiv-2501.05468-b31b1b.svg" alt="arXiv" /></a> |
+| **[The Promise and Challenges of Using LLMs to Accelerate the Screening Process of Systematic Reviews](https://arxiv.org/abs/2404.15667)** — Huotala et al., 2024, *arXiv:2404.15667*. GPT-3.5/4 vs humans on title-abstract screening; prompt strategies compared | <a href="https://arxiv.org/abs/2404.15667"><img src="https://img.shields.io/badge/arXiv-2404.15667-b31b1b.svg" alt="arXiv" /></a> |
+| **[Can large language models replace humans in systematic reviews? Evaluating GPT-4's efficacy in screening and extracting data from peer-reviewed and grey literature in multiple languages](https://doi.org/10.1002/jrsm.1715)** — Khraisha et al., 2024, *Research Synthesis Methods*. GPT-4 screening and data extraction across languages and literature types | <a href="https://doi.org/10.1002/jrsm.1715"><img src="https://img.shields.io/badge/DOI-10.1002%2Fjrsm.1715-blue.svg" alt="DOI" /></a> |
+| **[High-performance automated abstract screening with large language model ensembles](https://arxiv.org/abs/2411.02451)** — Sanghera et al., 2024, *arXiv:2411.02451*. LLM ensembles match/exceed human accuracy on Cochrane review screening | <a href="https://arxiv.org/abs/2411.02451"><img src="https://img.shields.io/badge/arXiv-2411.02451-b31b1b.svg" alt="arXiv" /></a> |
+| **[Screening articles for systematic reviews with ChatGPT](https://doi.org/10.1016/j.cola.2024.101287)** — Syriani et al., 2024, *Journal of Computer Languages*. Large-scale evaluation of ChatGPT as a systematic review screener | <a href="https://doi.org/10.1016/j.cola.2024.101287"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.cola.2024.101287-blue.svg" alt="DOI" /></a> |
+
+</details>
+
+<details open>
+<summary><h3>Automated Survey Writing & Paper Search</h3></summary>
+
+*Agents that search, synthesize, and write literature reviews.*
+
+| Paper | Link |
+|---|---|
+| **[PaSa: An LLM Agent for Comprehensive Academic Paper Search](https://arxiv.org/abs/2501.10120)** — He et al., 2025, *arXiv:2501.10120*. RL-trained LLM agent for comprehensive scholarly paper retrieval | <a href="https://arxiv.org/abs/2501.10120"><img src="https://img.shields.io/badge/arXiv-2501.10120-b31b1b.svg" alt="arXiv" /></a> |
+| **[Agentic AutoSurvey: Let LLMs Survey LLMs](https://arxiv.org/abs/2509.18661)** — Liu et al., 2025, *arXiv:2509.18661*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Four agents search, cluster, write, and evaluate literature surveys | <a href="https://arxiv.org/abs/2509.18661"><img src="https://img.shields.io/badge/arXiv-2509.18661-b31b1b.svg" alt="arXiv" /></a> |
+| **[SurveyG: A Multi-Agent LLM Framework with Hierarchical Citation Graph for Automated Survey Generation](https://arxiv.org/abs/2510.07733)** — Nguyen et al., 2025, *arXiv:2510.07733*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Citation-graph-guided multi-agent survey generation | <a href="https://arxiv.org/abs/2510.07733"><img src="https://img.shields.io/badge/arXiv-2510.07733-b31b1b.svg" alt="arXiv" /></a> |
+| **[Accelerating Scientific Research Through a Multi-LLM Framework](https://arxiv.org/abs/2502.07960)** — Ramirez-Medina et al., 2025, *arXiv:2502.07960*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> Four-agent pipeline retrieves, filters, and synthesizes literature | <a href="https://arxiv.org/abs/2502.07960"><img src="https://img.shields.io/badge/arXiv-2502.07960-b31b1b.svg" alt="arXiv" /></a> |
+| **[AutoSurvey: Large Language Models Can Automatically Write Surveys](https://arxiv.org/abs/2406.10252)** — Wang et al., 2024, *NeurIPS 2024*. End-to-end LLM pipeline for automatic literature survey writing | <a href="https://arxiv.org/abs/2406.10252"><img src="https://img.shields.io/badge/arXiv-2406.10252-b31b1b.svg" alt="arXiv" /></a> |
+
+</details>
+
+<details open>
+<summary><h3>Market & Consumer Simulation</h3></summary>
+
+*Generative agents simulating consumers, markets, and economies for management research.*
+
+| Paper | Link |
+|---|---|
+| **[Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442)** — Park et al., 2023, *UIST 2023*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> 25 LLM agents show emergent social behavior; landmark work | <a href="https://arxiv.org/abs/2304.03442"><img src="https://img.shields.io/badge/arXiv-2304.03442-b31b1b.svg" alt="arXiv" /></a> |
+
+</details>
+
+<details open>
+<summary><h3>Scientific Discovery Agents</h3></summary>
+
+*Autonomous research agents with direct relevance to R&D processes.*
+
+| Paper | Link |
+|---|---|
+| **[Augmenting large language models with chemistry tools](https://doi.org/10.1038/s42256-024-00832-8)** — Bran et al., 2024, *Nature Machine Intelligence*. ChemCrow: LLM agent with 18 tools for synthesis and discovery | <a href="https://doi.org/10.1038/s42256-024-00832-8"><img src="https://img.shields.io/badge/DOI-10.1038%2Fs42256--024--00832--8-blue.svg" alt="DOI" /></a> |
 
 </details>
 

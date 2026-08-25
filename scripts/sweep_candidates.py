@@ -45,12 +45,22 @@ QUERIES = [
     '"generative AI" "new product development"',
     '"LLM agents" "market simulation"',
     '"large language model" "innovation management"',
+    '"large language model" "technology roadmap"',
+    '"LLM" "competitive intelligence"',
+    '"large language model" "technology transfer" OR "IP licensing"',
+    '"LLM" "R&D portfolio" OR "R&D project management"',
+    '"large language model" standards OR regulation "technology management"',
+    '"LLM" commercialization OR "startup scouting"',
+    '"generative AI" "digital prototyping"',
 ]
 
 
 def norm_title(t):
     t = unicodedata.normalize("NFKD", t or "").lower()
     return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+FAILED_FETCHES = []  # sweep is only complete if this stays empty
 
 
 def get_json(url, tries=3):
@@ -62,6 +72,7 @@ def get_json(url, tries=3):
         except Exception as e:  # noqa: BLE001 — best-effort sweep
             if i == tries - 1:
                 print(f"WARN: giving up on {url}: {e}", file=sys.stderr)
+                FAILED_FETCHES.append(url)
                 return None
             time.sleep(2 * (i + 1))
 
@@ -132,9 +143,9 @@ def main():
     args = ap.parse_args()
 
     today = date.today()
-    m = today.month - args.months
-    y, m = (today.year - 1, m + 12) if m < 1 else (today.year, m)
-    since = date(y, m, 1).isoformat()
+    total = today.year * 12 + (today.month - 1) - args.months
+    y, m0 = divmod(total, 12)
+    since = date(y, m0 + 1, 1).isoformat()
 
     known = known_keys()
     seen, candidates = set(), []
@@ -159,6 +170,13 @@ def main():
         venue = f" — *{r['venue']}*" if r["venue"] else ""
         print(f"- [ ] [{r['title']}]({r['url']}) ({r['year']}){venue} "
               f"<sub>{r['src']}, query: `{r['query']}`</sub>")
+
+    if FAILED_FETCHES:
+        print(f"\n> ⚠️ **Partial sweep**: {len(FAILED_FETCHES)} API request(s) "
+              "failed after retries — results above are incomplete. "
+              "Re-run the sweep before treating this month as covered.")
+        print(f"partial sweep: {len(FAILED_FETCHES)} failed fetches", file=sys.stderr)
+        sys.exit(3)  # signal "completed but incomplete" to the workflow
 
 
 if __name__ == "__main__":

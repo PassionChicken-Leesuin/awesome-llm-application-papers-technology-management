@@ -119,6 +119,8 @@ def load_papers():
         if not re.fullmatch(r"20\d\d-(0[1-9]|1[0-2])", row.get("month") or ""):
             sys.exit(f"papers.tsv: missing/invalid month for {row['title'][:50]!r} "
                      "(expected YYYY-MM — first public appearance)")
+        if row.get("tier") not in ("core", "adjacent"):
+            sys.exit(f"papers.tsv: tier must be 'core' or 'adjacent' for {row['title'][:50]!r}")
     return rows
 
 
@@ -276,7 +278,8 @@ def render_heatmap(rows, mode):
     c = CHART[mode]
     sec2group = {name: g for g, secs in GROUPS for name, _ in secs}
     bins = quarter_range(rows)
-    groups = [g for g, _ in GROUPS]
+    live_groups = {sec2group[r["section"]] for r in rows}
+    groups = [g for g, _ in GROUPS if g in live_groups]
     counts = {(g, b): 0 for g in groups for b in bins}
     for r in rows:
         counts[(sec2group[r["section"]], quarter_of(r["month"]))] += 1
@@ -349,14 +352,24 @@ def render_venues(rows):
     return "\n".join(out)
 
 
-def render(rows):
+ADJ_HEADING = "Adjacent & enabling methods"
+ADJ_INTRO = ("Benchmarks, domain models, surveys, generic-domain analogues "
+             "(e.g. medical systematic-review screening), and landmark frameworks "
+             "that TIM applications build on. Kept for reference — "
+             "**not counted in the headline paper count or charts**.")
+
+
+def render(core, adj):
     by_sec = {}
-    for r in rows:
+    for r in core:
         by_sec.setdefault(r["section"], []).append(r)
+    adj_by_sec = {}
+    for r in adj:
+        adj_by_sec.setdefault(r["section"], []).append(r)
 
     toc, body = [], ["## Papers", "",
-                     "`MAS` badge marks explicitly multi-agent systems. "
-                     "Newest first within each section.", ""]
+                     f"{len(core)} core papers. `MAS` badge marks explicitly "
+                     "multi-agent systems. Newest first within each section.", ""]
     for group, secs in GROUPS:
         live = [(n, d) for n, d in secs if by_sec.get(n)]
         if not live:
@@ -371,6 +384,14 @@ def render(rows):
             for name, desc in live:
                 toc.append(f"  - [{name}](#{gh_anchor(name)}) ({len(by_sec[name])})")
                 body += section_block(name, desc, by_sec[name], level=4)
+
+    if adj:
+        toc.append(f"- [{ADJ_HEADING}](#{gh_anchor(ADJ_HEADING)}) ({len(adj)})")
+        body += [f"## {ADJ_HEADING}", "", ADJ_INTRO, ""]
+        for group, secs in GROUPS:
+            for name, desc in secs:
+                if adj_by_sec.get(name):
+                    body += section_block(name, desc, adj_by_sec[name], level=3)
     toc.append("- [Related lists](#related-lists)")
 
     return "\n".join([BEGIN, "", "## Contents", ""] + toc + [""] + body + [END])
@@ -378,25 +399,28 @@ def render(rows):
 
 def main():
     rows = load_papers()
+    core = [r for r in rows if r["tier"] == "core"]
+    adj = [r for r in rows if r["tier"] == "adjacent"]
     text = README.read_text(encoding="utf-8")
     try:
         head, rest = text.split(BEGIN, 1)
         _, tail = rest.split(END, 1)
     except ValueError:
         sys.exit("README.md: AUTOGEN:PAPERS markers not found")
-    head = re.sub(r"papers-\d+-blue", f"papers-{len(rows)}-blue", head)
+    head = re.sub(r"papers-\d+-blue", f"papers-{len(core)}-blue", head)
+    head = re.sub(r"adjacent-\d+-lightgrey", f"adjacent-{len(adj)}-lightgrey", head)
     if V_BEGIN in head:
         try:
             v_head, v_rest = head.split(V_BEGIN, 1)
             _, v_tail = v_rest.split(V_END, 1)
         except ValueError:
             sys.exit("README.md: AUTOGEN:VENUES markers malformed")
-        head = v_head + render_venues(rows) + v_tail
-    new = head + render(rows) + tail
+        head = v_head + render_venues(core) + v_tail
+    new = head + render(core, adj) + tail
     charts = {}
     for m in ("light", "dark"):
-        charts[ROOT / "assets" / f"trend-{m}.svg"] = render_chart(rows, m)
-        charts[ROOT / "assets" / f"fields-{m}.svg"] = render_heatmap(rows, m)
+        charts[ROOT / "assets" / f"trend-{m}.svg"] = render_chart(core, m)
+        charts[ROOT / "assets" / f"fields-{m}.svg"] = render_heatmap(core, m)
     if "--check" in sys.argv:
         stale = new != text or any(
             not f.exists() or f.read_text(encoding="utf-8") != svg

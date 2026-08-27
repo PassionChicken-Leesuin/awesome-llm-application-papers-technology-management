@@ -2,7 +2,8 @@
 
 <div align="center">
 
-**Hand-picked research papers applying LLMs, LLM agents, and multi-agent systems (MAS) to technology & innovation management (TIM).**
+**A hand-picked collection of research papers applying LLMs, LLM agents, and multi-agent systems (MAS) to Technology and Innovation Management (TIM).
+Curated by researchers from Seoul National University’s Data-Driven Service Innovation Lab.**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Papers](https://img.shields.io/badge/papers-161-blue)

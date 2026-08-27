@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping curate this list. The list is data-driven: **`data/papers.tsv` is the source of truth**, and the generated parts of `README.md` — the paper-count badge, the trend chart (`assets/trend-*.svg`), the venue table, the Contents (with per-section counts), and the Papers tables — are built from it. Never edit the README between the `AUTOGEN:PAPERS` markers by hand.
+Thanks you for helping curate this list. The list is data-driven: **`data/papers.tsv` is the source of truth**, and the generated parts of `README.md` — the paper-count badge, the trend chart (`assets/trend-*.svg`), the venue table, the Contents (with per-section counts), and the Papers tables — are built from it. Never edit the README between the `AUTOGEN:PAPERS` markers by hand.
 
 ## Adding a paper
 

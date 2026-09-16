@@ -39,7 +39,7 @@ patent analytics · technology forecasting · scientometrics · R&D & innovation
 
 | Venue | Papers |
 |---|---:|
-| arXiv (preprints) | 27 |
+| arXiv (preprints) | 28 |
 | Scientometrics | 23 |
 | World Patent Information | 21 |
 | Journal of Engineering Design | 13 |
@@ -81,7 +81,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 - **Patent & IP Analytics**
   - [Patent Classification & Screening](#patent-classification--screening) (5)
   - [Patent Landscaping & Technology Intelligence](#patent-landscaping--technology-intelligence) (17)
-  - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (5)
+  - [Prior-Art Search & Patent Retrieval](#prior-art-search--patent-retrieval) (6)
   - [Patent Drafting & Claim Generation](#patent-drafting--claim-generation) (11)
   - [Patent Quality, Novelty & Valuation](#patent-quality-novelty--valuation) (9)
   - [Trademark & Non-Patent IP](#trademark--non-patent-ip) (2)
@@ -104,7 +104,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 
 ## Papers
 
-161 core papers. `MAS` badge marks explicitly multi-agent systems. Newest first within each section.
+162 core papers. `MAS` badge marks explicitly multi-agent systems. Newest first within each section.
 
 ### Patent & IP Analytics
 
@@ -162,6 +162,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 | **[Advancing patent law with generative AI: Human-in-the-loop systems for AI-assisted drafting, prior art search, and multimodal IP protection](https://doi.org/10.1016/j.wpi.2025.102341)** — Bui, 2025, *World Patent Information*. Human-in-the-loop generative AI for drafting, prior-art search, multimodal IP | <a href="https://doi.org/10.1016/j.wpi.2025.102341"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2025.102341-blue.svg" alt="DOI" /></a> |
 | **[Designing tailored patent search approaches – A case study on nursing care technology](https://doi.org/10.1016/j.wpi.2025.102420)** — Waterstraat & Walter, 2025, *World Patent Information*. Design-theory multi-perspective keyword search for fuzzy technology fields | <a href="https://doi.org/10.1016/j.wpi.2025.102420"><img src="https://img.shields.io/badge/DOI-10.1016%2Fj.wpi.2025.102420-blue.svg" alt="DOI" /></a> |
 | **[Large Language Model Informed Patent Image Retrieval](https://arxiv.org/abs/2404.19360)** — Lo et al., 2024, *PatentSemTech @ SIGIR 2024*. LLM-generated captions improve patent drawing retrieval | <a href="https://arxiv.org/abs/2404.19360"><img src="https://img.shields.io/badge/arXiv-2404.19360-b31b1b.svg" alt="arXiv" /></a> |
+| **[PatentMatch: A Dataset for Matching Patent Claims & Prior Art](https://arxiv.org/abs/2012.13919)** — Risch et al., 2020, *arXiv:2012.13919*. EPO examiner-labelled dataset pairing patent claims with prior-art passages for novelty assessment and retrieval | <a href="https://arxiv.org/abs/2012.13919"><img src="https://img.shields.io/badge/arXiv-2012.13919-b31b1b.svg" alt="arXiv" /></a> |
 
 </details>
 

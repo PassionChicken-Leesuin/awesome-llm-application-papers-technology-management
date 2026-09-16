@@ -7,7 +7,7 @@ Curated by researchers from Seoul National University’s Data-Driven Service In
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Papers](https://img.shields.io/badge/papers-161-blue)
-![Adjacent](https://img.shields.io/badge/adjacent-56-lightgrey)
+![Adjacent](https://img.shields.io/badge/adjacent-57-lightgrey)
 [![License: CC0-1.0](https://img.shields.io/badge/license-CC0--1.0-lightgrey.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -99,7 +99,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 - **Simulation, Strategy & Discovery**
   - [Market & Consumer Simulation](#market--consumer-simulation) (6)
   - [Strategy & Decision-Making](#strategy--decision-making) (1)
-- [Adjacent & enabling methods](#adjacent--enabling-methods) (56)
+- [Adjacent & enabling methods](#adjacent--enabling-methods) (57)
 - [Related lists](#related-lists)
 
 ## Papers
@@ -322,7 +322,7 @@ Maintained with a human-in-the-loop pipeline: a monthly GitHub Action sweeps Ope
 
 | Paper | Link |
 |---|---|
-| **[A global south strategy for evaluating research value with ChatGPT](https://doi.org/10.1162/qss.a.460)** — Nunkoo & Thelwall, 2026, *Quantitative Science Studies*. ChatGPT research-value scoring as peer-review substitute for Global South | <a href="https://doi.org/10.1162/qss.a.460"><img src="https://img.shields.io/badge/DOI-10.1162%2Fqss.a.460-blue.svg" alt="DOI" /></a> |
+| **[A global south strategy for evaluating research value with ChatGPT](https://doi.org/10.48550/arXiv.2608.20777)** — Nunkoo & Thelwall, 2026, *Quantitative Science Studies*. ChatGPT research-value scoring as peer-review substitute for Global South | <a href="https://doi.org/10.48550/arXiv.2608.20777"><img src="https://img.shields.io/badge/DOI-10.48550%2FarXiv.2608.20777-blue.svg" alt="DOI" /></a> |
 | **[Evaluating LLM-assisted research: stage-sensitive asymmetries in productivity and epistemic control](https://doi.org/10.1093/reseval/rvag021)** — Kim & Park, 2026, *Research Evaluation*. Stage-sensitive productivity and epistemic-control asymmetries in LLM-assisted research | <a href="https://doi.org/10.1093/reseval/rvag021"><img src="https://img.shields.io/badge/DOI-10.1093%2Freseval%2Frvag021-blue.svg" alt="DOI" /></a> |
 | **[Comparing LLM and expert assessments of journal quality](https://doi.org/10.1007/s11192-026-05644-8)** — Saarela et al., 2026, *Scientometrics*. LLM journal-quality ratings compared against Finnish JuFo expert panels | <a href="https://doi.org/10.1007/s11192-026-05644-8"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05644--8-blue.svg" alt="DOI" /></a> |
 | **[Cicq: a unified framework integrating citation impact and content quality for automated literature evaluation](https://doi.org/10.1007/s11192-026-05594-1)** — Chen et al., 2026, *Scientometrics*. Unifies citation impact with fine-tuned LLM content quality | <a href="https://doi.org/10.1007/s11192-026-05594-1"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05594--1-blue.svg" alt="DOI" /></a> |
@@ -545,6 +545,7 @@ Benchmarks, domain models, surveys, generic-domain analogues (e.g. medical syste
 | **[When AI Becomes Its Own Biggest Fan: Self-Preference Bias in AI-Assisted Peer Review](https://doi.org/10.1109/tem.2026.3691360)** — Shi et al., 2026, *IEEE Trans. Engineering Management*. GPT-4 and LLaMA favour their own text when reviewing | <a href="https://doi.org/10.1109/tem.2026.3691360"><img src="https://img.shields.io/badge/DOI-10.1109%2Ftem.2026.3691360-blue.svg" alt="DOI" /></a> |
 | **[Exploiting large language models in peer review: indirect prompt injection attacks and integrity probes](https://doi.org/10.1007/s11192-026-05695-x)** — Torrielli et al., 2026, *Scientometrics*. Hidden manuscript instructions steer LLM reviewers via prompt injection | <a href="https://doi.org/10.1007/s11192-026-05695-x"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--026--05695--x-blue.svg" alt="DOI" /></a> |
 | **[More Versus Better: Artificial Intelligence, Incentives, and the Emerging Crisis in Peer Review](https://doi.org/10.1287/orsc.2026.ed.v37.n3)** — Gartenberg et al., 2026, *Organization Science*. AI raises submissions 42% while writing quality falls | <a href="https://doi.org/10.1287/orsc.2026.ed.v37.n3"><img src="https://img.shields.io/badge/DOI-10.1287%2Forsc.2026.ed.v37.n3-blue.svg" alt="DOI" /></a> |
+| **[Tree-of-Concerns: Hierarchical Multi-Agent Debate for Unstated-Limitation Extraction in Scientific Critique](https://doi.org/10.48550/arXiv.2608)** — Mishra et al., 2026, *arXiv:2608.20777*. <img src="https://img.shields.io/badge/MAS-multi--agent-8A2BE2" alt="MAS" /> As scientific literature grows and papers increasingly under-report limitations, multi-agent LLMs offer a promising approach to systematically uncover these hidden failure modes. Here, we introduce Tree-of-Concerns, a multi-agent framework that deploys specialized skeptic personas, each operating through a category-specific analytical lens, as parallel debate trees to extract unstated limitations from scientific papers. Each persona conducts structured, evidence-grounded argumentation, while a Panel Review mechanism re-evaluates each surviving claim from all five perspectives to correct category drift and severity miscalibration. Through experiments on ToC-Bench, our benchmark of 414 research papers with 1,905 unstated limitations, sourced from reviewer-reported weaknesses and follow-up citation critiques, we demonstrate that ToC improves precision by 79% and coverage by 11% relative to strongest baselines, surfacing specific, evidence-grounded concerns that support reviewers in systematic evaluation. | <a href="https://doi.org/10.48550/arXiv.2608"><img src="https://img.shields.io/badge/DOI-10.48550%2FarXiv.2608-blue.svg" alt="DOI" /></a> |
 | **[Large language models in peer review: challenges and opportunities](https://doi.org/10.1007/s11192-025-05440-w)** — Sun, 2025, *Scientometrics*. Surveys challenges and opportunities of LLMs in peer review | <a href="https://doi.org/10.1007/s11192-025-05440-w"><img src="https://img.shields.io/badge/DOI-10.1007%2Fs11192--025--05440--w-blue.svg" alt="DOI" /></a> |
 
 </details>

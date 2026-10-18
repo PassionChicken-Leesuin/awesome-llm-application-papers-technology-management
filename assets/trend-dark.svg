@@ -15,6 +15,7 @@
 <text x="738" y="17" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="11" fill="#c3c2b7">Preprints (arXiv/SSRN)</text>
 <rect x="40.5" y="212.1" width="21.2" height="5.9" fill="#3987e5"/>
 <text x="51.1" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2020 Q3</text>
+<path d="M74.7,218.0 v-1.9 q0,-4.0 4.0,-4.0 h13.2 q4.0,0 4.0,4.0 v1.9 z" fill="#e66767"/>
 <text x="85.2" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q4</text>
 <text x="119.4" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">2021 Q1</text>
 <text x="153.6" y="234" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="10.5" fill="#898781">Q2</text>

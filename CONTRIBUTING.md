@@ -19,6 +19,7 @@ Thanks you for helping curate this list. The list is data-driven: **`data/papers
    | `summary` | one clause, ≤ 12 words, telegraphic style matching existing entries |
    | `month` | `YYYY-MM` of **first public appearance** (arXiv posting month from the ID, or the journal's online-first date per Crossref) — feeds the trend chart |
    | `tier` | `core` for papers applying an LLM/agent **directly to a TIM task**; `adjacent` for benchmarks, domain models, surveys, generic-domain analogues, and enabling frameworks. Only `core` counts toward the badge and charts |
+   | `checker` | **GitHub usernames** of contributors who have **read the full paper**, comma-separated (`PassionChicken-Leesuin, wlstn8802`). Leave empty if nobody has read it yet; rendered as profile links in the Checker column |
 
    Row order within a year is preserved, and sections are sorted newest-first by year, so place your row where it should appear among same-year entries.
 3. Regenerate the README and verify:
@@ -29,6 +30,10 @@ Thanks you for helping curate this list. The list is data-driven: **`data/papers
    ```
 
 4. Open a PR with both the TSV change and the regenerated `README.md`. One paper per PR is easiest to review; batches are fine if they share a theme.
+
+## Marking a paper as read
+
+After reading a paper in full, add your GitHub username (not your real name) to its `checker` cell in `data/papers.tsv` (append with `, ` if someone is already listed), regenerate the README, and open a PR.
 
 ## Adding a section
 

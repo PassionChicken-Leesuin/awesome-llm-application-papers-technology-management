@@ -129,14 +129,26 @@ def load_papers():
                      "(expected YYYY-MM — first public appearance)")
         if row.get("tier") not in ("core", "adjacent"):
             sys.exit(f"papers.tsv: tier must be 'core' or 'adjacent' for {row['title'][:50]!r}")
+        for u in checkers(row):
+            if not GH_USER.fullmatch(u):
+                sys.exit(f"papers.tsv: checker {u!r} is not a GitHub username "
+                         f"for {row['title'][:50]!r}")
     return rows
+
+
+GH_USER = re.compile(r"[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}")
+
+
+def checkers(row):
+    return [u.strip().lstrip("@") for u in (row.get("checker") or "").split(",") if u.strip()]
 
 
 def paper_row(r):
     mas = f"{MAS_BADGE} " if r["mas"].strip().lower() == "yes" else ""
     desc = (f"**[{r['title']}]({r['url']})** — {r['authors']}, {r['year']}, "
             f"*{r['venue']}*. {mas}{r['summary']}")
-    return f"| {desc} | {link_badge(r['url'])} |"
+    checker = ", ".join(f"[@{u}](https://github.com/{u})" for u in checkers(r))
+    return f"| {desc} | {link_badge(r['url'])} | {checker} |"
 
 
 def section_block(name, desc, papers, level):
@@ -145,8 +157,8 @@ def section_block(name, desc, papers, level):
     out = ["<details open>",
            f"<summary><{h}>{name}</{h}></summary>", "",
            f"*{desc}*", "",
-           "| Paper | Link |",
-           "|---|---|"]
+           "| Paper | Link | Checker |",
+           "|---|---|---|"]
     out += [paper_row(r) for r in papers]
     out += ["", "</details>", ""]
     return out
